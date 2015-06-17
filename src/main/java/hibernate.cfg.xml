@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+	"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+	"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+	<!-- 配置会话工厂（hibernate核心对象，管理数据库连接池） -->
+	<session-factory>
+		<!-- 连接数据库 JDBC 四个基本连接参数 -->
+		<!-- mysql数据库  mac不识别localhost-->
+		<property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+		<property name="connection.url">jdbc:mysql://127.0.0.1:3306/julyedu</property>
+		<property name="connection.username">root</property>
+		<property name="connection.password">123456</property>
+		<property name="dialect">org.hibernate.dialect.MySQLDialect</property>
+		<!-- 其它属性 -->
+		<!-- 自动建表 -->
+		<property name="hibernate.hbm2ddl.auto">update</property>
+		<!-- 在日志中输出SQL -->
+		<property name="hibernate.show_sql">true</property>
+		<property name="hibernate.format_sql">true</property>
+		<!-- 事务默认操作 -->
+		<property name="hibernate.connection.autocommit">true</property>
+	</session-factory>
+</hibernate-configuration>

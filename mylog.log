@@ -1,0 +1,1701 @@
+11:31:12,350  INFO Version:37 - Hibernate Commons Annotations 3.2.0.Final
+11:31:12,372  INFO Environment:603 - Hibernate 3.6.10.Final
+11:31:12,389  INFO Environment:636 - hibernate.properties not found
+11:31:12,395  INFO Environment:814 - Bytecode provider name : javassist
+11:31:12,401  INFO Environment:695 - using JDK 1.4 java.sql.Timestamp handling
+11:31:12,540  INFO Configuration:2156 - configuring from resource: /hibernate.cfg.xml
+11:31:12,540  INFO Configuration:2175 - Configuration resource: /hibernate.cfg.xml
+11:31:12,721  INFO Configuration:789 - Reading mappings from resource : com/lyt/webtemp/model/ScmOrgan.hbm.xml
+11:31:12,814  WARN DTDEntityResolver:73 - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+11:31:12,867  INFO Configuration:2297 - Configured SessionFactory: null
+11:31:12,969  INFO HbmBinder:353 - Mapping class: com.lyt.webtemp.model.ScmOrgan -> SCM_ORGAN
+11:31:13,010  INFO Configuration:1676 - Hibernate Validator not found: ignoring
+11:31:13,025  INFO HibernateSearchEventListenerRegister:75 - Unable to find org.hibernate.search.event.FullTextIndexEventListener on the classpath. Hibernate Search is not enabled.
+11:31:13,048  INFO DriverManagerConnectionProvider:64 - Using Hibernate built-in connection pool (not for production use!)
+11:31:13,049  INFO DriverManagerConnectionProvider:65 - Hibernate connection pool size: 20
+11:31:13,049  INFO DriverManagerConnectionProvider:68 - autocommit mode: true
+11:31:13,096  INFO DriverManagerConnectionProvider:103 - using driver: com.ibm.db2.jcc.DB2Driver at URL: jdbc:db2://124.202.228.243:50000/hnsdb
+11:31:13,097  INFO DriverManagerConnectionProvider:109 - connection properties: {user=tzxdb, password=****, autocommit=true}
+11:31:16,987  INFO Dialect:136 - Using dialect: org.hibernate.dialect.DB2Dialect
+11:31:17,011  INFO JdbcSupportLoader:79 - Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+11:31:17,022  WARN SettingsFactory:140 - Could not obtain connection metadata
+com.ibm.db2.jcc.b.SqlException: DatabaseMetaData information is not known for server DB2/LINUXX8664SQL09056 by this version of JDBC driver
+	at com.ibm.db2.jcc.b.s.supportsResultSetType(s.java:5183)
+	at org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:120)
+	at org.hibernate.cfg.Configuration.buildSettingsInternal(Configuration.java:2863)
+	at org.hibernate.cfg.Configuration.buildSettings(Configuration.java:2859)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1870)
+	at com.lyt.webtemp.util.HibernateUtil.<clinit>(HibernateUtil.java:29)
+	at com.lyt.webtemp.AppTest.main(AppTest.java:13)
+11:31:17,130  INFO TransactionFactoryFactory:62 - Using default transaction strategy (direct JDBC transactions)
+11:31:17,133  INFO TransactionManagerLookupFactory:83 - No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+11:31:17,133  INFO SettingsFactory:179 - Automatic flush during beforeCompletion(): disabled
+11:31:17,133  INFO SettingsFactory:183 - Automatic session close at end of transaction: disabled
+11:31:17,135  INFO SettingsFactory:198 - Scrollable result sets: disabled
+11:31:17,135  INFO SettingsFactory:206 - JDBC3 getGeneratedKeys(): disabled
+11:31:17,135  INFO SettingsFactory:214 - Connection release mode: auto
+11:31:17,137  INFO SettingsFactory:241 - Default batch fetch size: 1
+11:31:17,137  INFO SettingsFactory:245 - Generate SQL with comments: disabled
+11:31:17,137  INFO SettingsFactory:249 - Order SQL updates by primary key: disabled
+11:31:17,138  INFO SettingsFactory:253 - Order SQL inserts for batching: disabled
+11:31:17,139  INFO SettingsFactory:431 - Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+11:31:17,142  INFO ASTQueryTranslatorFactory:47 - Using ASTQueryTranslatorFactory
+11:31:17,143  INFO SettingsFactory:261 - Query language substitutions: {}
+11:31:17,143  INFO SettingsFactory:266 - JPA-QL strict compliance: disabled
+11:31:17,143  INFO SettingsFactory:271 - Second-level cache: enabled
+11:31:17,143  INFO SettingsFactory:275 - Query cache: disabled
+11:31:17,143  INFO SettingsFactory:406 - Cache region factory : org.hibernate.cache.impl.NoCachingRegionFactory
+11:31:17,145  INFO SettingsFactory:285 - Optimize cache for minimal puts: disabled
+11:31:17,146  INFO SettingsFactory:294 - Structured second-level cache entries: disabled
+11:31:17,153  INFO SettingsFactory:314 - Echoing all SQL to stdout
+11:31:17,154  INFO SettingsFactory:323 - Statistics: disabled
+11:31:17,154  INFO SettingsFactory:327 - Deleted entity synthetic identifier rollback: disabled
+11:31:17,154  INFO SettingsFactory:343 - Default entity-mode: pojo
+11:31:17,155  INFO SettingsFactory:347 - Named query checking : enabled
+11:31:17,155  INFO SettingsFactory:351 - Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+11:31:17,193  INFO SessionFactoryImpl:202 - building session factory
+11:31:17,217  INFO BasicTypeRegistry:150 - Type registration [materialized_blob] overrides previous : org.hibernate.type.MaterializedBlobType@1b9ae1a
+11:31:17,217  INFO BasicTypeRegistry:150 - Type registration [materialized_clob] overrides previous : org.hibernate.type.MaterializedClobType@1556436
+11:31:17,217  INFO BasicTypeRegistry:150 - Type registration [characters_clob] overrides previous : org.hibernate.type.PrimitiveCharacterArrayClobType@1264c47
+11:31:17,218  INFO BasicTypeRegistry:150 - Type registration [wrapper_characters_clob] overrides previous : org.hibernate.type.CharacterArrayClobType@159e38d
+11:31:17,218  INFO BasicTypeRegistry:150 - Type registration [clob] overrides previous : org.hibernate.type.ClobType@6a49f5
+11:31:17,218  INFO BasicTypeRegistry:150 - Type registration [java.sql.Clob] overrides previous : org.hibernate.type.ClobType@6a49f5
+11:31:17,222  INFO BasicTypeRegistry:150 - Type registration [blob] overrides previous : org.hibernate.type.BlobType@1d7b37
+11:31:17,222  INFO BasicTypeRegistry:150 - Type registration [java.sql.Blob] overrides previous : org.hibernate.type.BlobType@1d7b37
+11:31:17,222  INFO BasicTypeRegistry:150 - Type registration [wrapper_materialized_blob] overrides previous : org.hibernate.type.WrappedMaterializedBlobType@1848b3a
+11:35:35,341  INFO Version:37 - Hibernate Commons Annotations 3.2.0.Final
+11:35:35,374  INFO Environment:603 - Hibernate 3.6.10.Final
+11:35:35,379  INFO Environment:636 - hibernate.properties not found
+11:35:35,388  INFO Environment:814 - Bytecode provider name : javassist
+11:35:35,394  INFO Environment:695 - using JDK 1.4 java.sql.Timestamp handling
+11:35:35,592  INFO Configuration:2156 - configuring from resource: /hibernate.cfg.xml
+11:35:35,593  INFO Configuration:2175 - Configuration resource: /hibernate.cfg.xml
+11:35:35,796  INFO Configuration:789 - Reading mappings from resource : com/lyt/webtemp/model/ScmOrgan.hbm.xml
+11:35:35,846  WARN DTDEntityResolver:73 - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+11:35:35,908  INFO Configuration:2297 - Configured SessionFactory: null
+11:35:36,002  INFO HbmBinder:353 - Mapping class: com.lyt.webtemp.model.ScmOrgan -> SCM_ORGAN
+11:35:36,042  INFO Configuration:1676 - Hibernate Validator not found: ignoring
+11:35:36,057  INFO HibernateSearchEventListenerRegister:75 - Unable to find org.hibernate.search.event.FullTextIndexEventListener on the classpath. Hibernate Search is not enabled.
+11:35:36,067  INFO DriverManagerConnectionProvider:64 - Using Hibernate built-in connection pool (not for production use!)
+11:35:36,068  INFO DriverManagerConnectionProvider:65 - Hibernate connection pool size: 20
+11:35:36,068  INFO DriverManagerConnectionProvider:68 - autocommit mode: true
+11:35:36,126  INFO DriverManagerConnectionProvider:103 - using driver: com.ibm.db2.jcc.DB2Driver at URL: jdbc:db2://124.202.228.243:50000/hnsdb
+11:35:36,126  INFO DriverManagerConnectionProvider:109 - connection properties: {user=tzxdb, password=****, autocommit=true}
+11:35:36,818  INFO Dialect:136 - Using dialect: org.hibernate.dialect.DB2Dialect
+11:35:36,843  INFO JdbcSupportLoader:79 - Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+11:35:36,845  WARN SettingsFactory:140 - Could not obtain connection metadata
+com.ibm.db2.jcc.b.SqlException: DatabaseMetaData information is not known for server DB2/LINUXX8664SQL09056 by this version of JDBC driver
+	at com.ibm.db2.jcc.b.s.supportsResultSetType(s.java:5183)
+	at org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:120)
+	at org.hibernate.cfg.Configuration.buildSettingsInternal(Configuration.java:2863)
+	at org.hibernate.cfg.Configuration.buildSettings(Configuration.java:2859)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1870)
+	at com.lyt.webtemp.util.HibernateUtil.<clinit>(HibernateUtil.java:29)
+	at com.lyt.webtemp.AppTest.main(AppTest.java:13)
+11:35:36,852  INFO TransactionFactoryFactory:62 - Using default transaction strategy (direct JDBC transactions)
+11:35:36,856  INFO TransactionManagerLookupFactory:83 - No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+11:35:36,856  INFO SettingsFactory:179 - Automatic flush during beforeCompletion(): disabled
+11:35:36,856  INFO SettingsFactory:183 - Automatic session close at end of transaction: disabled
+11:35:36,858  INFO SettingsFactory:198 - Scrollable result sets: disabled
+11:35:36,858  INFO SettingsFactory:206 - JDBC3 getGeneratedKeys(): disabled
+11:35:36,858  INFO SettingsFactory:214 - Connection release mode: auto
+11:35:36,859  INFO SettingsFactory:241 - Default batch fetch size: 1
+11:35:36,859  INFO SettingsFactory:245 - Generate SQL with comments: disabled
+11:35:36,860  INFO SettingsFactory:249 - Order SQL updates by primary key: disabled
+11:35:36,860  INFO SettingsFactory:253 - Order SQL inserts for batching: disabled
+11:35:36,860  INFO SettingsFactory:431 - Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+11:35:36,865  INFO ASTQueryTranslatorFactory:47 - Using ASTQueryTranslatorFactory
+11:35:36,865  INFO SettingsFactory:261 - Query language substitutions: {}
+11:35:36,865  INFO SettingsFactory:266 - JPA-QL strict compliance: disabled
+11:35:36,866  INFO SettingsFactory:271 - Second-level cache: enabled
+11:35:36,866  INFO SettingsFactory:275 - Query cache: disabled
+11:35:36,866  INFO SettingsFactory:406 - Cache region factory : org.hibernate.cache.impl.NoCachingRegionFactory
+11:35:36,867  INFO SettingsFactory:285 - Optimize cache for minimal puts: disabled
+11:35:36,868  INFO SettingsFactory:294 - Structured second-level cache entries: disabled
+11:35:36,875  INFO SettingsFactory:314 - Echoing all SQL to stdout
+11:35:36,877  INFO SettingsFactory:323 - Statistics: disabled
+11:35:36,877  INFO SettingsFactory:327 - Deleted entity synthetic identifier rollback: disabled
+11:35:36,877  INFO SettingsFactory:343 - Default entity-mode: pojo
+11:35:36,877  INFO SettingsFactory:347 - Named query checking : enabled
+11:35:36,878  INFO SettingsFactory:351 - Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+11:35:36,910  INFO SessionFactoryImpl:202 - building session factory
+11:35:36,920  INFO BasicTypeRegistry:150 - Type registration [wrapper_materialized_blob] overrides previous : org.hibernate.type.WrappedMaterializedBlobType@1d3bb7b
+11:35:36,920  INFO BasicTypeRegistry:150 - Type registration [wrapper_characters_clob] overrides previous : org.hibernate.type.CharacterArrayClobType@1b9ae1a
+11:35:36,920  INFO BasicTypeRegistry:150 - Type registration [characters_clob] overrides previous : org.hibernate.type.PrimitiveCharacterArrayClobType@1556436
+11:35:36,921  INFO BasicTypeRegistry:150 - Type registration [materialized_clob] overrides previous : org.hibernate.type.MaterializedClobType@1264c47
+11:35:36,921  INFO BasicTypeRegistry:150 - Type registration [materialized_blob] overrides previous : org.hibernate.type.MaterializedBlobType@159e38d
+11:35:36,921  INFO BasicTypeRegistry:150 - Type registration [clob] overrides previous : org.hibernate.type.ClobType@6a49f5
+11:35:36,921  INFO BasicTypeRegistry:150 - Type registration [java.sql.Clob] overrides previous : org.hibernate.type.ClobType@6a49f5
+11:35:36,921  INFO BasicTypeRegistry:150 - Type registration [blob] overrides previous : org.hibernate.type.BlobType@1d7b37
+11:35:36,921  INFO BasicTypeRegistry:150 - Type registration [java.sql.Blob] overrides previous : org.hibernate.type.BlobType@1d7b37
+11:35:37,922  INFO SessionFactoryObjectFactory:105 - Not binding factory to JNDI, no JNDI name configured
+11:35:37,933  INFO SchemaUpdate:155 - Running hbm2ddl schema update
+11:35:37,933  INFO SchemaUpdate:167 - fetching database metadata
+11:35:38,050  INFO SchemaUpdate:179 - updating schema
+11:35:38,055  WARN JDBCExceptionReporter:233 - SQL Error: -99999, SQLState: null
+11:35:38,055 ERROR JDBCExceptionReporter:234 - DatabaseMetaData information is not known for server DB2/LINUXX8664SQL09056 by this version of JDBC driver
+11:35:38,056 ERROR SchemaUpdate:222 - could not complete schema update
+org.hibernate.exception.GenericJDBCException: could not get table metadata: SCM_ORGAN
+	at org.hibernate.exception.SQLStateConverter.handledNonSpecificException(SQLStateConverter.java:140)
+	at org.hibernate.exception.SQLStateConverter.convert(SQLStateConverter.java:128)
+	at org.hibernate.exception.JDBCExceptionHelper.convert(JDBCExceptionHelper.java:66)
+	at org.hibernate.exception.JDBCExceptionHelper.convert(JDBCExceptionHelper.java:52)
+	at org.hibernate.tool.hbm2ddl.DatabaseMetadata.getTableMetadata(DatabaseMetadata.java:128)
+	at org.hibernate.cfg.Configuration.generateSchemaUpdateScript(Configuration.java:1202)
+	at org.hibernate.tool.hbm2ddl.SchemaUpdate.execute(SchemaUpdate.java:187)
+	at org.hibernate.impl.SessionFactoryImpl.<init>(SessionFactoryImpl.java:375)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1872)
+	at com.lyt.webtemp.util.HibernateUtil.<clinit>(HibernateUtil.java:29)
+	at com.lyt.webtemp.AppTest.main(AppTest.java:13)
+Caused by: com.ibm.db2.jcc.b.SqlException: DatabaseMetaData information is not known for server DB2/LINUXX8664SQL09056 by this version of JDBC driver
+	at com.ibm.db2.jcc.b.s.storesUpperCaseIdentifiers(s.java:613)
+	at org.hibernate.tool.hbm2ddl.DatabaseMetadata.getTableMetadata(DatabaseMetadata.java:88)
+	... 6 more
+11:35:38,342  WARN JDBCExceptionReporter:233 - SQL Error: -204, SQLState: 42704
+11:35:38,343 ERROR JDBCExceptionReporter:234 - DB2 SQL error: SQLCODE: -204, SQLSTATE: 42704, SQLERRMC: TZXSCM.SCMORGAN
+11:35:38,343  WARN JDBCExceptionReporter:233 - SQL Error: -727, SQLState: 56098
+11:35:38,343 ERROR JDBCExceptionReporter:234 - DB2 SQL error: SQLCODE: -727, SQLSTATE: 56098, SQLERRMC: 2;-204;42704;TZXSCM.SCMORGAN
+11:35:38,343  WARN JDBCExceptionReporter:233 - SQL Error: -727, SQLState: 56098
+11:35:38,344 ERROR JDBCExceptionReporter:234 - DB2 SQL error: SQLCODE: -727, SQLSTATE: 56098, SQLERRMC: 2;-204;42704;TZXSCM.SCMORGAN
+11:35:38,361  WARN JDBCExceptionReporter:233 - SQL Error: -204, SQLState: 42704
+11:35:38,361 ERROR JDBCExceptionReporter:234 - DB2 SQL error: SQLCODE: -204, SQLSTATE: 42704, SQLERRMC: TZXSCM.SCMORGAN
+11:35:38,361  WARN JDBCExceptionReporter:233 - SQL Error: -727, SQLState: 56098
+11:35:38,361 ERROR JDBCExceptionReporter:234 - DB2 SQL error: SQLCODE: -727, SQLSTATE: 56098, SQLERRMC: 2;-204;42704;TZXSCM.SCMORGAN
+11:35:38,362  WARN JDBCExceptionReporter:233 - SQL Error: -727, SQLState: 56098
+11:35:38,362 ERROR JDBCExceptionReporter:234 - DB2 SQL error: SQLCODE: -727, SQLSTATE: 56098, SQLERRMC: 2;-204;42704;TZXSCM.SCMORGAN
+11:36:13,836  INFO Version:37 - Hibernate Commons Annotations 3.2.0.Final
+11:36:13,863  INFO Environment:603 - Hibernate 3.6.10.Final
+11:36:13,867  INFO Environment:636 - hibernate.properties not found
+11:36:13,873  INFO Environment:814 - Bytecode provider name : javassist
+11:36:13,881  INFO Environment:695 - using JDK 1.4 java.sql.Timestamp handling
+11:36:14,045  INFO Configuration:2156 - configuring from resource: /hibernate.cfg.xml
+11:36:14,045  INFO Configuration:2175 - Configuration resource: /hibernate.cfg.xml
+11:36:14,222  INFO Configuration:789 - Reading mappings from resource : com/lyt/webtemp/model/ScmOrgan.hbm.xml
+11:36:14,274  WARN DTDEntityResolver:73 - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+11:36:14,333  INFO Configuration:2297 - Configured SessionFactory: null
+11:36:14,434  INFO HbmBinder:353 - Mapping class: com.lyt.webtemp.model.ScmOrgan -> SCM_ORGAN
+11:36:14,472  INFO Configuration:1676 - Hibernate Validator not found: ignoring
+11:36:14,489  INFO HibernateSearchEventListenerRegister:75 - Unable to find org.hibernate.search.event.FullTextIndexEventListener on the classpath. Hibernate Search is not enabled.
+11:36:14,503  INFO DriverManagerConnectionProvider:64 - Using Hibernate built-in connection pool (not for production use!)
+11:36:14,503  INFO DriverManagerConnectionProvider:65 - Hibernate connection pool size: 20
+11:36:14,503  INFO DriverManagerConnectionProvider:68 - autocommit mode: true
+11:36:14,548  INFO DriverManagerConnectionProvider:103 - using driver: com.ibm.db2.jcc.DB2Driver at URL: jdbc:db2://124.202.228.243:50000/hnsdb
+11:36:14,549  INFO DriverManagerConnectionProvider:109 - connection properties: {user=tzxdb, password=****, autocommit=true}
+11:36:14,949  INFO Dialect:136 - Using dialect: org.hibernate.dialect.DB2Dialect
+11:36:14,971  INFO JdbcSupportLoader:79 - Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+11:36:14,973  WARN SettingsFactory:140 - Could not obtain connection metadata
+com.ibm.db2.jcc.b.SqlException: DatabaseMetaData information is not known for server DB2/LINUXX8664SQL09056 by this version of JDBC driver
+	at com.ibm.db2.jcc.b.s.supportsResultSetType(s.java:5183)
+	at org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:120)
+	at org.hibernate.cfg.Configuration.buildSettingsInternal(Configuration.java:2863)
+	at org.hibernate.cfg.Configuration.buildSettings(Configuration.java:2859)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1870)
+	at com.lyt.webtemp.util.HibernateUtil.<clinit>(HibernateUtil.java:29)
+	at com.lyt.webtemp.AppTest.main(AppTest.java:13)
+11:36:14,979  INFO TransactionFactoryFactory:62 - Using default transaction strategy (direct JDBC transactions)
+11:36:14,982  INFO TransactionManagerLookupFactory:83 - No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+11:36:14,982  INFO SettingsFactory:179 - Automatic flush during beforeCompletion(): disabled
+11:36:14,983  INFO SettingsFactory:183 - Automatic session close at end of transaction: disabled
+11:36:14,984  INFO SettingsFactory:198 - Scrollable result sets: disabled
+11:36:14,984  INFO SettingsFactory:206 - JDBC3 getGeneratedKeys(): disabled
+11:36:14,984  INFO SettingsFactory:214 - Connection release mode: auto
+11:36:14,986  INFO SettingsFactory:241 - Default batch fetch size: 1
+11:36:14,986  INFO SettingsFactory:245 - Generate SQL with comments: disabled
+11:36:14,986  INFO SettingsFactory:249 - Order SQL updates by primary key: disabled
+11:36:14,986  INFO SettingsFactory:253 - Order SQL inserts for batching: disabled
+11:36:14,986  INFO SettingsFactory:431 - Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+11:36:14,990  INFO ASTQueryTranslatorFactory:47 - Using ASTQueryTranslatorFactory
+11:36:14,990  INFO SettingsFactory:261 - Query language substitutions: {}
+11:36:14,990  INFO SettingsFactory:266 - JPA-QL strict compliance: disabled
+11:36:14,993  INFO SettingsFactory:271 - Second-level cache: enabled
+11:36:14,993  INFO SettingsFactory:275 - Query cache: disabled
+11:36:14,993  INFO SettingsFactory:406 - Cache region factory : org.hibernate.cache.impl.NoCachingRegionFactory
+11:36:14,995  INFO SettingsFactory:285 - Optimize cache for minimal puts: disabled
+11:36:14,995  INFO SettingsFactory:294 - Structured second-level cache entries: disabled
+11:36:15,003  INFO SettingsFactory:314 - Echoing all SQL to stdout
+11:36:15,004  INFO SettingsFactory:323 - Statistics: disabled
+11:36:15,004  INFO SettingsFactory:327 - Deleted entity synthetic identifier rollback: disabled
+11:36:15,007  INFO SettingsFactory:343 - Default entity-mode: pojo
+11:36:15,007  INFO SettingsFactory:347 - Named query checking : enabled
+11:36:15,007  INFO SettingsFactory:351 - Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+11:36:15,036  INFO SessionFactoryImpl:202 - building session factory
+11:36:15,047  INFO BasicTypeRegistry:150 - Type registration [wrapper_materialized_blob] overrides previous : org.hibernate.type.WrappedMaterializedBlobType@1d3bb7b
+11:36:15,047  INFO BasicTypeRegistry:150 - Type registration [wrapper_characters_clob] overrides previous : org.hibernate.type.CharacterArrayClobType@1b9ae1a
+11:36:15,047  INFO BasicTypeRegistry:150 - Type registration [characters_clob] overrides previous : org.hibernate.type.PrimitiveCharacterArrayClobType@1556436
+11:36:15,047  INFO BasicTypeRegistry:150 - Type registration [materialized_clob] overrides previous : org.hibernate.type.MaterializedClobType@1264c47
+11:36:15,047  INFO BasicTypeRegistry:150 - Type registration [materialized_blob] overrides previous : org.hibernate.type.MaterializedBlobType@159e38d
+11:36:15,048  INFO BasicTypeRegistry:150 - Type registration [clob] overrides previous : org.hibernate.type.ClobType@6a49f5
+11:36:15,048  INFO BasicTypeRegistry:150 - Type registration [java.sql.Clob] overrides previous : org.hibernate.type.ClobType@6a49f5
+11:36:15,048  INFO BasicTypeRegistry:150 - Type registration [blob] overrides previous : org.hibernate.type.BlobType@1d7b37
+11:36:15,048  INFO BasicTypeRegistry:150 - Type registration [java.sql.Blob] overrides previous : org.hibernate.type.BlobType@1d7b37
+11:36:15,669  INFO SessionFactoryObjectFactory:105 - Not binding factory to JNDI, no JNDI name configured
+11:36:15,679  INFO SchemaUpdate:155 - Running hbm2ddl schema update
+11:36:15,679  INFO SchemaUpdate:167 - fetching database metadata
+11:36:15,751  INFO SchemaUpdate:179 - updating schema
+11:36:15,757  WARN JDBCExceptionReporter:233 - SQL Error: -99999, SQLState: null
+11:36:15,758 ERROR JDBCExceptionReporter:234 - DatabaseMetaData information is not known for server DB2/LINUXX8664SQL09056 by this version of JDBC driver
+11:36:15,758 ERROR SchemaUpdate:222 - could not complete schema update
+org.hibernate.exception.GenericJDBCException: could not get table metadata: SCM_ORGAN
+	at org.hibernate.exception.SQLStateConverter.handledNonSpecificException(SQLStateConverter.java:140)
+	at org.hibernate.exception.SQLStateConverter.convert(SQLStateConverter.java:128)
+	at org.hibernate.exception.JDBCExceptionHelper.convert(JDBCExceptionHelper.java:66)
+	at org.hibernate.exception.JDBCExceptionHelper.convert(JDBCExceptionHelper.java:52)
+	at org.hibernate.tool.hbm2ddl.DatabaseMetadata.getTableMetadata(DatabaseMetadata.java:128)
+	at org.hibernate.cfg.Configuration.generateSchemaUpdateScript(Configuration.java:1202)
+	at org.hibernate.tool.hbm2ddl.SchemaUpdate.execute(SchemaUpdate.java:187)
+	at org.hibernate.impl.SessionFactoryImpl.<init>(SessionFactoryImpl.java:375)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1872)
+	at com.lyt.webtemp.util.HibernateUtil.<clinit>(HibernateUtil.java:29)
+	at com.lyt.webtemp.AppTest.main(AppTest.java:13)
+Caused by: com.ibm.db2.jcc.b.SqlException: DatabaseMetaData information is not known for server DB2/LINUXX8664SQL09056 by this version of JDBC driver
+	at com.ibm.db2.jcc.b.s.storesUpperCaseIdentifiers(s.java:613)
+	at org.hibernate.tool.hbm2ddl.DatabaseMetadata.getTableMetadata(DatabaseMetadata.java:88)
+	... 6 more
+11:53:49,723  INFO Version:37 - Hibernate Commons Annotations 3.2.0.Final
+11:53:49,787  INFO Environment:603 - Hibernate 3.6.10.Final
+11:53:49,790  INFO Environment:636 - hibernate.properties not found
+11:53:49,803  INFO Environment:814 - Bytecode provider name : javassist
+11:53:49,809  INFO Environment:695 - using JDK 1.4 java.sql.Timestamp handling
+11:53:49,951  INFO Configuration:2156 - configuring from resource: /hibernate.cfg.xml
+11:53:49,952  INFO Configuration:2175 - Configuration resource: /hibernate.cfg.xml
+11:53:50,116  INFO Configuration:789 - Reading mappings from resource : com/lyt/webtemp/model/ScmOrgan.hbm.xml
+11:53:50,182  WARN DTDEntityResolver:73 - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+11:53:50,265  INFO Configuration:2297 - Configured SessionFactory: null
+11:53:50,354  INFO HbmBinder:353 - Mapping class: com.lyt.webtemp.model.ScmOrgan -> SCM_ORGAN
+11:53:50,399  INFO Configuration:1676 - Hibernate Validator not found: ignoring
+11:53:50,418  INFO HibernateSearchEventListenerRegister:75 - Unable to find org.hibernate.search.event.FullTextIndexEventListener on the classpath. Hibernate Search is not enabled.
+11:53:50,431  INFO DriverManagerConnectionProvider:64 - Using Hibernate built-in connection pool (not for production use!)
+11:53:50,432  INFO DriverManagerConnectionProvider:65 - Hibernate connection pool size: 20
+11:53:50,432  INFO DriverManagerConnectionProvider:68 - autocommit mode: true
+11:53:50,461  INFO DriverManagerConnectionProvider:103 - using driver: com.mysql.jdbc.Driver at URL: jdbc:mysql://127.0.0.1:3306/julyedu
+11:53:50,462  INFO DriverManagerConnectionProvider:109 - connection properties: {user=root, password=****, autocommit=true}
+11:53:51,337  INFO Dialect:136 - Using dialect: org.hibernate.dialect.MySQLDialect
+11:53:51,364  INFO JdbcSupportLoader:79 - Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+11:53:51,365  INFO SettingsFactory:126 - Database ->
+       name : MySQL
+    version : 5.5.13
+      major : 5
+      minor : 5
+11:53:51,365  INFO SettingsFactory:132 - Driver ->
+       name : MySQL-AB JDBC Driver
+    version : mysql-connector-java-5.1.13 ( Revision: ${bzr.revision-id} )
+      major : 5
+      minor : 1
+11:53:51,370  INFO TransactionFactoryFactory:62 - Using default transaction strategy (direct JDBC transactions)
+11:53:51,373  INFO TransactionManagerLookupFactory:83 - No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+11:53:51,373  INFO SettingsFactory:179 - Automatic flush during beforeCompletion(): disabled
+11:53:51,373  INFO SettingsFactory:183 - Automatic session close at end of transaction: disabled
+11:53:51,374  INFO SettingsFactory:190 - JDBC batch size: 15
+11:53:51,374  INFO SettingsFactory:193 - JDBC batch updates for versioned data: disabled
+11:53:51,375  INFO SettingsFactory:198 - Scrollable result sets: enabled
+11:53:51,376  INFO SettingsFactory:206 - JDBC3 getGeneratedKeys(): enabled
+11:53:51,376  INFO SettingsFactory:214 - Connection release mode: auto
+11:53:51,377  INFO SettingsFactory:238 - Maximum outer join fetch depth: 2
+11:53:51,377  INFO SettingsFactory:241 - Default batch fetch size: 1
+11:53:51,377  INFO SettingsFactory:245 - Generate SQL with comments: disabled
+11:53:51,378  INFO SettingsFactory:249 - Order SQL updates by primary key: disabled
+11:53:51,380  INFO SettingsFactory:253 - Order SQL inserts for batching: disabled
+11:53:51,381  INFO SettingsFactory:431 - Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+11:53:51,384  INFO ASTQueryTranslatorFactory:47 - Using ASTQueryTranslatorFactory
+11:53:51,384  INFO SettingsFactory:261 - Query language substitutions: {}
+11:53:51,384  INFO SettingsFactory:266 - JPA-QL strict compliance: disabled
+11:53:51,384  INFO SettingsFactory:271 - Second-level cache: enabled
+11:53:51,385  INFO SettingsFactory:275 - Query cache: disabled
+11:53:51,385  INFO SettingsFactory:406 - Cache region factory : org.hibernate.cache.impl.NoCachingRegionFactory
+11:53:51,392  INFO SettingsFactory:285 - Optimize cache for minimal puts: disabled
+11:53:51,392  INFO SettingsFactory:294 - Structured second-level cache entries: disabled
+11:53:51,401  INFO SettingsFactory:314 - Echoing all SQL to stdout
+11:53:51,403  INFO SettingsFactory:323 - Statistics: disabled
+11:53:51,404  INFO SettingsFactory:327 - Deleted entity synthetic identifier rollback: disabled
+11:53:51,404  INFO SettingsFactory:343 - Default entity-mode: pojo
+11:53:51,404  INFO SettingsFactory:347 - Named query checking : enabled
+11:53:51,405  INFO SettingsFactory:351 - Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+11:53:51,454  INFO SessionFactoryImpl:202 - building session factory
+11:53:51,465  INFO BasicTypeRegistry:150 - Type registration [materialized_blob] overrides previous : org.hibernate.type.MaterializedBlobType@157a8be
+11:53:51,466  INFO BasicTypeRegistry:150 - Type registration [wrapper_characters_clob] overrides previous : org.hibernate.type.CharacterArrayClobType@783df
+11:53:51,467  INFO BasicTypeRegistry:150 - Type registration [wrapper_materialized_blob] overrides previous : org.hibernate.type.WrappedMaterializedBlobType@162c756
+11:53:51,468  INFO BasicTypeRegistry:150 - Type registration [characters_clob] overrides previous : org.hibernate.type.PrimitiveCharacterArrayClobType@d1e63
+11:53:51,468  INFO BasicTypeRegistry:150 - Type registration [blob] overrides previous : org.hibernate.type.BlobType@145fed7
+11:53:51,469  INFO BasicTypeRegistry:150 - Type registration [java.sql.Blob] overrides previous : org.hibernate.type.BlobType@145fed7
+11:53:51,469  INFO BasicTypeRegistry:150 - Type registration [materialized_clob] overrides previous : org.hibernate.type.MaterializedClobType@5de33e
+11:53:51,469  INFO BasicTypeRegistry:150 - Type registration [clob] overrides previous : org.hibernate.type.ClobType@1f203d7
+11:53:51,469  INFO BasicTypeRegistry:150 - Type registration [java.sql.Clob] overrides previous : org.hibernate.type.ClobType@1f203d7
+11:53:52,378  INFO SessionFactoryObjectFactory:105 - Not binding factory to JNDI, no JNDI name configured
+11:53:52,393  INFO SchemaUpdate:155 - Running hbm2ddl schema update
+11:53:52,393  INFO SchemaUpdate:167 - fetching database metadata
+11:53:52,394  INFO SchemaUpdate:179 - updating schema
+11:53:52,404  INFO DatabaseMetadata:119 - table not found: SCM_ORGAN
+11:53:52,407  INFO DatabaseMetadata:119 - table not found: SCM_ORGAN
+11:53:52,463 ERROR SchemaUpdate:212 - Unsuccessful: create table TZXSCM.SCM_ORGAN (ID integer not null, WB_CODE varchar(20), PY_CODE varchar(20), ORGAN_NAME integer, HAS_PRICE_RIGHT varchar(100), LIMIT_MODE varchar(100), LIMIT_AMT double precision, ALLOW_BALANCE varchar(100), IS_PRINT_BILL_TITLE varchar(100), ADDRESS varchar(100), LINKMAN integer, LINK_PHONE varchar(18), START_DATE datetime, DAILY_DATE datetime, MONTH varchar(20), SALES_DATE datetime, FINANCIAL_DATE datetime, IS_BUSINESS_COST varchar(100), FIELD_A varchar(100), FIELD_B varchar(100), FILED_C varchar(100), FILED_D varchar(100), IS_ENABLE_SCM varchar(100), ORGAN_TYPE varchar(100), ACCOUNT_TITILE varchar(200), ZH_CODE varchar(200), BUSI_CODE varchar(50), POS_TYPE varchar(100), PAY_CODE varchar(20), IS_ASSTACT varchar(20), ASSTACT_TYPE_ONE varchar(200), ASSTACT_NUMBER_ONE varchar(200), ASSTACT_NAME_ONE varchar(200), ASSTACT_TYPE_TOW varchar(200), ASSTACT_NUMBER_TOW varchar(200), ASSTACT_NAME_TOW varchar(200), primary key (ID))
+11:53:52,464 ERROR SchemaUpdate:213 - Unknown database 'tzxscm'
+11:53:52,464  INFO SchemaUpdate:217 - schema update complete
+11:53:52,677  WARN JDBCExceptionReporter:233 - SQL Error: 1146, SQLState: 42S02
+11:53:52,678 ERROR JDBCExceptionReporter:234 - Table 'tzxscm.scm_organ' doesn't exist
+11:53:52,682  WARN JDBCExceptionReporter:233 - SQL Error: 1146, SQLState: 42S02
+11:53:52,683 ERROR JDBCExceptionReporter:234 - Table 'tzxscm.scm_organ' doesn't exist
+11:54:52,135  INFO Version:37 - Hibernate Commons Annotations 3.2.0.Final
+11:54:52,161  INFO Environment:603 - Hibernate 3.6.10.Final
+11:54:52,179  INFO Environment:636 - hibernate.properties not found
+11:54:52,185  INFO Environment:814 - Bytecode provider name : javassist
+11:54:52,190  INFO Environment:695 - using JDK 1.4 java.sql.Timestamp handling
+11:54:52,418  INFO Configuration:2156 - configuring from resource: /hibernate.cfg.xml
+11:54:52,418  INFO Configuration:2175 - Configuration resource: /hibernate.cfg.xml
+11:54:52,613  INFO Configuration:789 - Reading mappings from resource : com/lyt/webtemp/model/ScmOrgan.hbm.xml
+11:54:52,728  WARN DTDEntityResolver:73 - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+11:54:52,885  INFO Configuration:2297 - Configured SessionFactory: null
+11:54:53,035  INFO HbmBinder:353 - Mapping class: com.lyt.webtemp.model.ScmOrgan -> SCM_ORGAN
+11:54:53,094  INFO Configuration:1676 - Hibernate Validator not found: ignoring
+11:54:53,103  INFO HibernateSearchEventListenerRegister:75 - Unable to find org.hibernate.search.event.FullTextIndexEventListener on the classpath. Hibernate Search is not enabled.
+11:54:53,113  INFO DriverManagerConnectionProvider:64 - Using Hibernate built-in connection pool (not for production use!)
+11:54:53,113  INFO DriverManagerConnectionProvider:65 - Hibernate connection pool size: 20
+11:54:53,113  INFO DriverManagerConnectionProvider:68 - autocommit mode: true
+11:54:53,137  INFO DriverManagerConnectionProvider:103 - using driver: com.mysql.jdbc.Driver at URL: jdbc:mysql://127.0.0.1:3306/julyedu
+11:54:53,137  INFO DriverManagerConnectionProvider:109 - connection properties: {user=root, password=****, autocommit=true}
+11:54:53,766  INFO Dialect:136 - Using dialect: org.hibernate.dialect.MySQLDialect
+11:54:53,787  INFO JdbcSupportLoader:79 - Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+11:54:53,788  INFO SettingsFactory:126 - Database ->
+       name : MySQL
+    version : 5.5.13
+      major : 5
+      minor : 5
+11:54:53,788  INFO SettingsFactory:132 - Driver ->
+       name : MySQL-AB JDBC Driver
+    version : mysql-connector-java-5.1.13 ( Revision: ${bzr.revision-id} )
+      major : 5
+      minor : 1
+11:54:53,790  INFO TransactionFactoryFactory:62 - Using default transaction strategy (direct JDBC transactions)
+11:54:53,793  INFO TransactionManagerLookupFactory:83 - No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+11:54:53,794  INFO SettingsFactory:179 - Automatic flush during beforeCompletion(): disabled
+11:54:53,794  INFO SettingsFactory:183 - Automatic session close at end of transaction: disabled
+11:54:53,794  INFO SettingsFactory:190 - JDBC batch size: 15
+11:54:53,799  INFO SettingsFactory:193 - JDBC batch updates for versioned data: disabled
+11:54:53,801  INFO SettingsFactory:198 - Scrollable result sets: enabled
+11:54:53,801  INFO SettingsFactory:206 - JDBC3 getGeneratedKeys(): enabled
+11:54:53,803  INFO SettingsFactory:214 - Connection release mode: auto
+11:54:53,804  INFO SettingsFactory:238 - Maximum outer join fetch depth: 2
+11:54:53,804  INFO SettingsFactory:241 - Default batch fetch size: 1
+11:54:53,805  INFO SettingsFactory:245 - Generate SQL with comments: disabled
+11:54:53,805  INFO SettingsFactory:249 - Order SQL updates by primary key: disabled
+11:54:53,808  INFO SettingsFactory:253 - Order SQL inserts for batching: disabled
+11:54:53,809  INFO SettingsFactory:431 - Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+11:54:53,812  INFO ASTQueryTranslatorFactory:47 - Using ASTQueryTranslatorFactory
+11:54:53,812  INFO SettingsFactory:261 - Query language substitutions: {}
+11:54:53,813  INFO SettingsFactory:266 - JPA-QL strict compliance: disabled
+11:54:53,813  INFO SettingsFactory:271 - Second-level cache: enabled
+11:54:53,813  INFO SettingsFactory:275 - Query cache: disabled
+11:54:53,814  INFO SettingsFactory:406 - Cache region factory : org.hibernate.cache.impl.NoCachingRegionFactory
+11:54:53,816  INFO SettingsFactory:285 - Optimize cache for minimal puts: disabled
+11:54:53,817  INFO SettingsFactory:294 - Structured second-level cache entries: disabled
+11:54:53,830  INFO SettingsFactory:314 - Echoing all SQL to stdout
+11:54:53,833  INFO SettingsFactory:323 - Statistics: disabled
+11:54:53,833  INFO SettingsFactory:327 - Deleted entity synthetic identifier rollback: disabled
+11:54:53,835  INFO SettingsFactory:343 - Default entity-mode: pojo
+11:54:53,840  INFO SettingsFactory:347 - Named query checking : enabled
+11:54:53,840  INFO SettingsFactory:351 - Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+11:54:53,916  INFO SessionFactoryImpl:202 - building session factory
+11:54:53,926  INFO BasicTypeRegistry:150 - Type registration [blob] overrides previous : org.hibernate.type.BlobType@162c756
+11:54:53,926  INFO BasicTypeRegistry:150 - Type registration [java.sql.Blob] overrides previous : org.hibernate.type.BlobType@162c756
+11:54:53,926  INFO BasicTypeRegistry:150 - Type registration [materialized_clob] overrides previous : org.hibernate.type.MaterializedClobType@d1e63
+11:54:53,927  INFO BasicTypeRegistry:150 - Type registration [materialized_blob] overrides previous : org.hibernate.type.MaterializedBlobType@145fed7
+11:54:53,927  INFO BasicTypeRegistry:150 - Type registration [wrapper_characters_clob] overrides previous : org.hibernate.type.CharacterArrayClobType@5de33e
+11:54:53,927  INFO BasicTypeRegistry:150 - Type registration [clob] overrides previous : org.hibernate.type.ClobType@1f203d7
+11:54:53,927  INFO BasicTypeRegistry:150 - Type registration [java.sql.Clob] overrides previous : org.hibernate.type.ClobType@1f203d7
+11:54:53,927  INFO BasicTypeRegistry:150 - Type registration [wrapper_materialized_blob] overrides previous : org.hibernate.type.WrappedMaterializedBlobType@1da1a47
+11:54:53,927  INFO BasicTypeRegistry:150 - Type registration [characters_clob] overrides previous : org.hibernate.type.PrimitiveCharacterArrayClobType@1f32e51
+11:54:54,736  INFO SessionFactoryObjectFactory:105 - Not binding factory to JNDI, no JNDI name configured
+11:54:54,747  INFO SchemaUpdate:155 - Running hbm2ddl schema update
+11:54:54,747  INFO SchemaUpdate:167 - fetching database metadata
+11:54:54,748  INFO SchemaUpdate:179 - updating schema
+11:54:54,754  INFO DatabaseMetadata:119 - table not found: SCM_ORGAN
+11:54:54,762  INFO DatabaseMetadata:119 - table not found: SCM_ORGAN
+11:54:54,771 ERROR SchemaUpdate:212 - Unsuccessful: create table TZXSCM.SCM_ORGAN (ID integer not null, WB_CODE varchar(20), PY_CODE varchar(20), ORGAN_NAME integer, HAS_PRICE_RIGHT varchar(100), LIMIT_MODE varchar(100), LIMIT_AMT double precision, ALLOW_BALANCE varchar(100), IS_PRINT_BILL_TITLE varchar(100), ADDRESS varchar(100), LINKMAN integer, LINK_PHONE varchar(18), START_DATE datetime, DAILY_DATE datetime, MONTH varchar(20), SALES_DATE datetime, FINANCIAL_DATE datetime, IS_BUSINESS_COST varchar(100), FIELD_A varchar(100), FIELD_B varchar(100), FILED_C varchar(100), FILED_D varchar(100), IS_ENABLE_SCM varchar(100), ORGAN_TYPE varchar(100), ACCOUNT_TITILE varchar(200), ZH_CODE varchar(200), BUSI_CODE varchar(50), POS_TYPE varchar(100), PAY_CODE varchar(20), IS_ASSTACT varchar(20), ASSTACT_TYPE_ONE varchar(200), ASSTACT_NUMBER_ONE varchar(200), ASSTACT_NAME_ONE varchar(200), ASSTACT_TYPE_TOW varchar(200), ASSTACT_NUMBER_TOW varchar(200), ASSTACT_NAME_TOW varchar(200), primary key (ID))
+11:54:54,772 ERROR SchemaUpdate:213 - Unknown database 'tzxscm'
+11:54:54,773  INFO SchemaUpdate:217 - schema update complete
+11:59:54,023  INFO Version:37 - Hibernate Commons Annotations 3.2.0.Final
+11:59:54,050  INFO Environment:603 - Hibernate 3.6.10.Final
+11:59:54,065  INFO Environment:636 - hibernate.properties not found
+11:59:54,082  INFO Environment:814 - Bytecode provider name : javassist
+11:59:54,098  INFO Environment:695 - using JDK 1.4 java.sql.Timestamp handling
+11:59:54,300  INFO Configuration:2156 - configuring from resource: /hibernate.cfg.xml
+11:59:54,300  INFO Configuration:2175 - Configuration resource: /hibernate.cfg.xml
+11:59:54,519  INFO Configuration:789 - Reading mappings from resource : com/lyt/webtemp/model/ScmOrgan.hbm.xml
+12:01:12,830  INFO Version:37 - Hibernate Commons Annotations 3.2.0.Final
+12:01:12,860  INFO Environment:603 - Hibernate 3.6.10.Final
+12:01:12,863  INFO Environment:636 - hibernate.properties not found
+12:01:12,876  INFO Environment:814 - Bytecode provider name : javassist
+12:01:12,885  INFO Environment:695 - using JDK 1.4 java.sql.Timestamp handling
+12:01:13,062  INFO Configuration:2156 - configuring from resource: /hibernate.cfg.xml
+12:01:13,062  INFO Configuration:2175 - Configuration resource: /hibernate.cfg.xml
+12:01:13,283  INFO Configuration:2297 - Configured SessionFactory: null
+12:01:13,405  INFO Configuration:1676 - Hibernate Validator not found: ignoring
+12:01:13,441  INFO HibernateSearchEventListenerRegister:75 - Unable to find org.hibernate.search.event.FullTextIndexEventListener on the classpath. Hibernate Search is not enabled.
+12:01:13,456  INFO DriverManagerConnectionProvider:64 - Using Hibernate built-in connection pool (not for production use!)
+12:01:13,456  INFO DriverManagerConnectionProvider:65 - Hibernate connection pool size: 20
+12:01:13,457  INFO DriverManagerConnectionProvider:68 - autocommit mode: true
+12:01:13,485  INFO DriverManagerConnectionProvider:103 - using driver: com.mysql.jdbc.Driver at URL: jdbc:mysql://127.0.0.1:3306/julyedu
+12:01:13,486  INFO DriverManagerConnectionProvider:109 - connection properties: {user=root, password=****, autocommit=true}
+12:01:14,043  INFO Dialect:136 - Using dialect: org.hibernate.dialect.MySQLDialect
+12:01:14,078  INFO JdbcSupportLoader:79 - Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+12:01:14,079  INFO SettingsFactory:126 - Database ->
+       name : MySQL
+    version : 5.5.13
+      major : 5
+      minor : 5
+12:01:14,079  INFO SettingsFactory:132 - Driver ->
+       name : MySQL-AB JDBC Driver
+    version : mysql-connector-java-5.1.13 ( Revision: ${bzr.revision-id} )
+      major : 5
+      minor : 1
+12:01:14,082  INFO TransactionFactoryFactory:62 - Using default transaction strategy (direct JDBC transactions)
+12:01:14,094  INFO TransactionManagerLookupFactory:83 - No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+12:01:14,094  INFO SettingsFactory:179 - Automatic flush during beforeCompletion(): disabled
+12:01:14,094  INFO SettingsFactory:183 - Automatic session close at end of transaction: disabled
+12:01:14,095  INFO SettingsFactory:190 - JDBC batch size: 15
+12:01:14,095  INFO SettingsFactory:193 - JDBC batch updates for versioned data: disabled
+12:01:14,096  INFO SettingsFactory:198 - Scrollable result sets: enabled
+12:01:14,097  INFO SettingsFactory:206 - JDBC3 getGeneratedKeys(): enabled
+12:01:14,097  INFO SettingsFactory:214 - Connection release mode: auto
+12:01:14,099  INFO SettingsFactory:238 - Maximum outer join fetch depth: 2
+12:01:14,099  INFO SettingsFactory:241 - Default batch fetch size: 1
+12:01:14,099  INFO SettingsFactory:245 - Generate SQL with comments: disabled
+12:01:14,099  INFO SettingsFactory:249 - Order SQL updates by primary key: disabled
+12:01:14,100  INFO SettingsFactory:253 - Order SQL inserts for batching: disabled
+12:01:14,100  INFO SettingsFactory:431 - Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+12:01:14,104  INFO ASTQueryTranslatorFactory:47 - Using ASTQueryTranslatorFactory
+12:01:14,104  INFO SettingsFactory:261 - Query language substitutions: {}
+12:01:14,104  INFO SettingsFactory:266 - JPA-QL strict compliance: disabled
+12:01:14,105  INFO SettingsFactory:271 - Second-level cache: enabled
+12:01:14,105  INFO SettingsFactory:275 - Query cache: disabled
+12:01:14,105  INFO SettingsFactory:406 - Cache region factory : org.hibernate.cache.impl.NoCachingRegionFactory
+12:01:14,107  INFO SettingsFactory:285 - Optimize cache for minimal puts: disabled
+12:01:14,107  INFO SettingsFactory:294 - Structured second-level cache entries: disabled
+12:01:14,118  INFO SettingsFactory:314 - Echoing all SQL to stdout
+12:01:14,119  INFO SettingsFactory:323 - Statistics: disabled
+12:01:14,119  INFO SettingsFactory:327 - Deleted entity synthetic identifier rollback: disabled
+12:01:14,119  INFO SettingsFactory:343 - Default entity-mode: pojo
+12:01:14,120  INFO SettingsFactory:347 - Named query checking : enabled
+12:01:14,120  INFO SettingsFactory:351 - Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+12:01:14,151  INFO SessionFactoryImpl:202 - building session factory
+12:01:14,161  INFO BasicTypeRegistry:150 - Type registration [materialized_blob] overrides previous : org.hibernate.type.MaterializedBlobType@1887906
+12:01:14,162  INFO BasicTypeRegistry:150 - Type registration [wrapper_characters_clob] overrides previous : org.hibernate.type.CharacterArrayClobType@c182ee
+12:01:14,162  INFO BasicTypeRegistry:150 - Type registration [clob] overrides previous : org.hibernate.type.ClobType@7b0aef
+12:01:14,162  INFO BasicTypeRegistry:150 - Type registration [java.sql.Clob] overrides previous : org.hibernate.type.ClobType@7b0aef
+12:01:14,162  INFO BasicTypeRegistry:150 - Type registration [wrapper_materialized_blob] overrides previous : org.hibernate.type.WrappedMaterializedBlobType@b0058
+12:01:14,162  INFO BasicTypeRegistry:150 - Type registration [characters_clob] overrides previous : org.hibernate.type.PrimitiveCharacterArrayClobType@439aa9
+12:01:14,163  INFO BasicTypeRegistry:150 - Type registration [materialized_clob] overrides previous : org.hibernate.type.MaterializedClobType@5ed596
+12:01:14,163  INFO BasicTypeRegistry:150 - Type registration [blob] overrides previous : org.hibernate.type.BlobType@188ef1
+12:01:14,163  INFO BasicTypeRegistry:150 - Type registration [java.sql.Blob] overrides previous : org.hibernate.type.BlobType@188ef1
+12:01:14,511  INFO SessionFactoryObjectFactory:105 - Not binding factory to JNDI, no JNDI name configured
+12:01:14,535  INFO SchemaUpdate:155 - Running hbm2ddl schema update
+12:01:14,536  INFO SchemaUpdate:167 - fetching database metadata
+12:01:14,537  INFO SchemaUpdate:179 - updating schema
+12:01:14,542  INFO SchemaUpdate:217 - schema update complete
+12:40:03,865  INFO Version:37 - Hibernate Commons Annotations 3.2.0.Final
+12:40:03,919  INFO Environment:603 - Hibernate 3.6.10.Final
+12:40:03,924  INFO Environment:636 - hibernate.properties not found
+12:40:03,938  INFO Environment:814 - Bytecode provider name : javassist
+12:40:03,945  INFO Environment:695 - using JDK 1.4 java.sql.Timestamp handling
+12:40:04,089  INFO Configuration:2156 - configuring from resource: /hibernate.cfg.xml
+12:40:04,091  INFO Configuration:2175 - Configuration resource: /hibernate.cfg.xml
+12:40:04,290 ERROR XMLHelper:89 - Error parsing XML: /hibernate.cfg.xml(40) 元素类型为 "session-factory" 的内容必须匹配 "(property*,mapping*,(class-cache|collection-cache)*,event*,listener*)"。
+12:41:31,003  INFO Version:37 - Hibernate Commons Annotations 3.2.0.Final
+12:41:31,024  INFO Environment:603 - Hibernate 3.6.10.Final
+12:41:31,027  INFO Environment:636 - hibernate.properties not found
+12:41:31,045  INFO Environment:814 - Bytecode provider name : javassist
+12:41:31,052  INFO Environment:695 - using JDK 1.4 java.sql.Timestamp handling
+12:41:31,222  INFO Configuration:2156 - configuring from resource: /hibernate.cfg.xml
+12:41:31,222  INFO Configuration:2175 - Configuration resource: /hibernate.cfg.xml
+12:41:31,440  INFO Configuration:2297 - Configured SessionFactory: null
+12:41:31,531  INFO Configuration:1676 - Hibernate Validator not found: ignoring
+12:41:31,555  INFO HibernateSearchEventListenerRegister:75 - Unable to find org.hibernate.search.event.FullTextIndexEventListener on the classpath. Hibernate Search is not enabled.
+12:41:31,563  INFO DriverManagerConnectionProvider:64 - Using Hibernate built-in connection pool (not for production use!)
+12:41:31,563  INFO DriverManagerConnectionProvider:65 - Hibernate connection pool size: 20
+12:41:31,564  INFO DriverManagerConnectionProvider:68 - autocommit mode: true
+12:41:31,638  INFO DriverManagerConnectionProvider:103 - using driver: com.ibm.db2.jcc.DB2Driver at URL: jdbc:db2://124.202.228.243:50000/hnsdb
+12:41:31,639  INFO DriverManagerConnectionProvider:109 - connection properties: {user=tzxdb, password=****, autocommit=true}
+12:41:32,133  INFO Dialect:136 - Using dialect: org.hibernate.dialect.DB2Dialect
+12:41:32,164  INFO JdbcSupportLoader:79 - Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+12:41:32,167  WARN SettingsFactory:140 - Could not obtain connection metadata
+com.ibm.db2.jcc.b.SqlException: DatabaseMetaData information is not known for server DB2/LINUXX8664SQL09056 by this version of JDBC driver
+	at com.ibm.db2.jcc.b.s.supportsResultSetType(s.java:5183)
+	at org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:120)
+	at org.hibernate.cfg.Configuration.buildSettingsInternal(Configuration.java:2863)
+	at org.hibernate.cfg.Configuration.buildSettings(Configuration.java:2859)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1870)
+	at com.lyt.webtemp.util.HibernateUtil.<clinit>(HibernateUtil.java:29)
+	at com.lyt.webtemp.AppTest.mysqlConnTest(AppTest.java:25)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:675)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)
+12:41:32,172  INFO TransactionFactoryFactory:62 - Using default transaction strategy (direct JDBC transactions)
+12:41:32,177  INFO TransactionManagerLookupFactory:83 - No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+12:41:32,177  INFO SettingsFactory:179 - Automatic flush during beforeCompletion(): disabled
+12:41:32,177  INFO SettingsFactory:183 - Automatic session close at end of transaction: disabled
+12:41:32,179  INFO SettingsFactory:198 - Scrollable result sets: disabled
+12:41:32,179  INFO SettingsFactory:206 - JDBC3 getGeneratedKeys(): disabled
+12:41:32,179  INFO SettingsFactory:214 - Connection release mode: auto
+12:41:32,180  INFO SettingsFactory:241 - Default batch fetch size: 1
+12:41:32,181  INFO SettingsFactory:245 - Generate SQL with comments: disabled
+12:41:32,181  INFO SettingsFactory:249 - Order SQL updates by primary key: disabled
+12:41:32,181  INFO SettingsFactory:253 - Order SQL inserts for batching: disabled
+12:41:32,182  INFO SettingsFactory:431 - Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+12:41:32,184  INFO ASTQueryTranslatorFactory:47 - Using ASTQueryTranslatorFactory
+12:41:32,185  INFO SettingsFactory:261 - Query language substitutions: {}
+12:41:32,185  INFO SettingsFactory:266 - JPA-QL strict compliance: disabled
+12:41:32,185  INFO SettingsFactory:271 - Second-level cache: enabled
+12:41:32,186  INFO SettingsFactory:275 - Query cache: disabled
+12:41:32,186  INFO SettingsFactory:406 - Cache region factory : org.hibernate.cache.impl.NoCachingRegionFactory
+12:41:32,189  INFO SettingsFactory:285 - Optimize cache for minimal puts: disabled
+12:41:32,189  INFO SettingsFactory:294 - Structured second-level cache entries: disabled
+12:41:32,226  INFO SettingsFactory:314 - Echoing all SQL to stdout
+12:41:32,229  INFO SettingsFactory:323 - Statistics: disabled
+12:41:32,230  INFO SettingsFactory:327 - Deleted entity synthetic identifier rollback: disabled
+12:41:32,230  INFO SettingsFactory:343 - Default entity-mode: pojo
+12:41:32,230  INFO SettingsFactory:347 - Named query checking : enabled
+12:41:32,231  INFO SettingsFactory:351 - Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+12:41:32,286  INFO SessionFactoryImpl:202 - building session factory
+12:41:32,298  INFO BasicTypeRegistry:150 - Type registration [wrapper_characters_clob] overrides previous : org.hibernate.type.CharacterArrayClobType@1f85c27
+12:41:32,299  INFO BasicTypeRegistry:150 - Type registration [characters_clob] overrides previous : org.hibernate.type.PrimitiveCharacterArrayClobType@6a2d75
+12:41:32,299  INFO BasicTypeRegistry:150 - Type registration [blob] overrides previous : org.hibernate.type.BlobType@ce7a49
+12:41:32,299  INFO BasicTypeRegistry:150 - Type registration [java.sql.Blob] overrides previous : org.hibernate.type.BlobType@ce7a49
+12:41:32,300  INFO BasicTypeRegistry:150 - Type registration [materialized_clob] overrides previous : org.hibernate.type.MaterializedClobType@1be573d
+12:41:32,300  INFO BasicTypeRegistry:150 - Type registration [clob] overrides previous : org.hibernate.type.ClobType@15198f3
+12:41:32,300  INFO BasicTypeRegistry:150 - Type registration [java.sql.Clob] overrides previous : org.hibernate.type.ClobType@15198f3
+12:41:32,300  INFO BasicTypeRegistry:150 - Type registration [wrapper_materialized_blob] overrides previous : org.hibernate.type.WrappedMaterializedBlobType@10ad7c
+12:41:32,300  INFO BasicTypeRegistry:150 - Type registration [materialized_blob] overrides previous : org.hibernate.type.MaterializedBlobType@edd0f4
+12:41:32,634  INFO SessionFactoryObjectFactory:105 - Not binding factory to JNDI, no JNDI name configured
+12:41:32,653  INFO SchemaUpdate:155 - Running hbm2ddl schema update
+12:41:32,654  INFO SchemaUpdate:167 - fetching database metadata
+12:41:32,736  INFO SchemaUpdate:179 - updating schema
+12:41:32,740  INFO SchemaUpdate:217 - schema update complete
+12:41:33,016  WARN JDBCExceptionReporter:233 - SQL Error: -204, SQLState: 42704
+12:41:33,016 ERROR JDBCExceptionReporter:234 - DB2 SQL error: SQLCODE: -204, SQLSTATE: 42704, SQLERRMC: INFORMATION_SCHEMA.COLUMNS
+12:41:33,016  WARN JDBCExceptionReporter:233 - SQL Error: -727, SQLState: 56098
+12:41:33,017 ERROR JDBCExceptionReporter:234 - DB2 SQL error: SQLCODE: -727, SQLSTATE: 56098, SQLERRMC: 2;-204;42704;INFORMATION_SCHEMA.COLUMNS
+12:41:33,017  WARN JDBCExceptionReporter:233 - SQL Error: -727, SQLState: 56098
+12:41:33,017 ERROR JDBCExceptionReporter:234 - DB2 SQL error: SQLCODE: -727, SQLSTATE: 56098, SQLERRMC: 2;-204;42704;INFORMATION_SCHEMA.COLUMNS
+12:57:48,784  INFO Version:37 - Hibernate Commons Annotations 3.2.0.Final
+12:57:48,819  INFO Environment:603 - Hibernate 3.6.10.Final
+12:57:48,824  INFO Environment:636 - hibernate.properties not found
+12:57:48,840  INFO Environment:814 - Bytecode provider name : javassist
+12:57:48,848  INFO Environment:695 - using JDK 1.4 java.sql.Timestamp handling
+12:57:49,004  INFO Configuration:2156 - configuring from resource: /hibernate.cfg.xml
+12:57:49,005  INFO Configuration:2175 - Configuration resource: /hibernate.cfg.xml
+12:57:49,208  INFO Configuration:2297 - Configured SessionFactory: null
+12:57:49,303  INFO Configuration:1676 - Hibernate Validator not found: ignoring
+12:57:49,315  INFO HibernateSearchEventListenerRegister:75 - Unable to find org.hibernate.search.event.FullTextIndexEventListener on the classpath. Hibernate Search is not enabled.
+12:57:49,324  INFO DriverManagerConnectionProvider:64 - Using Hibernate built-in connection pool (not for production use!)
+12:57:49,325  INFO DriverManagerConnectionProvider:65 - Hibernate connection pool size: 20
+12:57:49,326  INFO DriverManagerConnectionProvider:68 - autocommit mode: true
+12:57:49,337  INFO DriverManagerConnectionProvider:103 - using driver: com.mysql.jdbc.Driver at URL: jdbc:mysql://127.0.0.1:3306/julyedu
+12:57:49,338  INFO DriverManagerConnectionProvider:109 - connection properties: {user=root, password=****, autocommit=true}
+12:57:49,875  INFO Dialect:136 - Using dialect: org.hibernate.dialect.MySQLDialect
+12:57:49,896  INFO JdbcSupportLoader:79 - Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+12:57:49,897  INFO SettingsFactory:126 - Database ->
+       name : MySQL
+    version : 5.5.13
+      major : 5
+      minor : 5
+12:57:49,897  INFO SettingsFactory:132 - Driver ->
+       name : MySQL-AB JDBC Driver
+    version : mysql-connector-java-5.1.13 ( Revision: ${bzr.revision-id} )
+      major : 5
+      minor : 1
+12:57:49,899  INFO TransactionFactoryFactory:62 - Using default transaction strategy (direct JDBC transactions)
+12:57:49,903  INFO TransactionManagerLookupFactory:83 - No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+12:57:49,904  INFO SettingsFactory:179 - Automatic flush during beforeCompletion(): disabled
+12:57:49,904  INFO SettingsFactory:183 - Automatic session close at end of transaction: disabled
+12:57:49,904  INFO SettingsFactory:190 - JDBC batch size: 15
+12:57:49,905  INFO SettingsFactory:193 - JDBC batch updates for versioned data: disabled
+12:57:49,906  INFO SettingsFactory:198 - Scrollable result sets: enabled
+12:57:49,906  INFO SettingsFactory:206 - JDBC3 getGeneratedKeys(): enabled
+12:57:49,907  INFO SettingsFactory:214 - Connection release mode: auto
+12:57:49,908  INFO SettingsFactory:238 - Maximum outer join fetch depth: 2
+12:57:49,909  INFO SettingsFactory:241 - Default batch fetch size: 1
+12:57:49,909  INFO SettingsFactory:245 - Generate SQL with comments: disabled
+12:57:49,909  INFO SettingsFactory:249 - Order SQL updates by primary key: disabled
+12:57:49,909  INFO SettingsFactory:253 - Order SQL inserts for batching: disabled
+12:57:49,910  INFO SettingsFactory:431 - Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+12:57:49,913  INFO ASTQueryTranslatorFactory:47 - Using ASTQueryTranslatorFactory
+12:57:49,914  INFO SettingsFactory:261 - Query language substitutions: {}
+12:57:49,915  INFO SettingsFactory:266 - JPA-QL strict compliance: disabled
+12:57:49,915  INFO SettingsFactory:271 - Second-level cache: enabled
+12:57:49,915  INFO SettingsFactory:275 - Query cache: disabled
+12:57:49,915  INFO SettingsFactory:406 - Cache region factory : org.hibernate.cache.impl.NoCachingRegionFactory
+12:57:49,917  INFO SettingsFactory:285 - Optimize cache for minimal puts: disabled
+12:57:49,917  INFO SettingsFactory:294 - Structured second-level cache entries: disabled
+12:57:49,925  INFO SettingsFactory:314 - Echoing all SQL to stdout
+12:57:49,926  INFO SettingsFactory:323 - Statistics: disabled
+12:57:49,930  INFO SettingsFactory:327 - Deleted entity synthetic identifier rollback: disabled
+12:57:49,931  INFO SettingsFactory:343 - Default entity-mode: pojo
+12:57:49,931  INFO SettingsFactory:347 - Named query checking : enabled
+12:57:49,931  INFO SettingsFactory:351 - Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+12:57:49,989  INFO SessionFactoryImpl:202 - building session factory
+12:57:50,002  INFO BasicTypeRegistry:150 - Type registration [blob] overrides previous : org.hibernate.type.BlobType@c182ee
+12:57:50,007  INFO BasicTypeRegistry:150 - Type registration [java.sql.Blob] overrides previous : org.hibernate.type.BlobType@c182ee
+12:57:50,007  INFO BasicTypeRegistry:150 - Type registration [materialized_clob] overrides previous : org.hibernate.type.MaterializedClobType@7b0aef
+12:57:50,007  INFO BasicTypeRegistry:150 - Type registration [wrapper_materialized_blob] overrides previous : org.hibernate.type.WrappedMaterializedBlobType@b0058
+12:57:50,008  INFO BasicTypeRegistry:150 - Type registration [materialized_blob] overrides previous : org.hibernate.type.MaterializedBlobType@439aa9
+12:57:50,008  INFO BasicTypeRegistry:150 - Type registration [wrapper_characters_clob] overrides previous : org.hibernate.type.CharacterArrayClobType@5ed596
+12:57:50,008  INFO BasicTypeRegistry:150 - Type registration [clob] overrides previous : org.hibernate.type.ClobType@188ef1
+12:57:50,008  INFO BasicTypeRegistry:150 - Type registration [java.sql.Clob] overrides previous : org.hibernate.type.ClobType@188ef1
+12:57:50,008  INFO BasicTypeRegistry:150 - Type registration [characters_clob] overrides previous : org.hibernate.type.PrimitiveCharacterArrayClobType@50afdd
+12:57:50,313  INFO SessionFactoryObjectFactory:105 - Not binding factory to JNDI, no JNDI name configured
+12:57:50,323  INFO SchemaUpdate:155 - Running hbm2ddl schema update
+12:57:50,324  INFO SchemaUpdate:167 - fetching database metadata
+12:57:50,325  INFO SchemaUpdate:179 - updating schema
+12:57:50,328  INFO SchemaUpdate:217 - schema update complete
+12:58:23,983  INFO Version:37 - Hibernate Commons Annotations 3.2.0.Final
+12:58:24,003  INFO Environment:603 - Hibernate 3.6.10.Final
+12:58:24,006  INFO Environment:636 - hibernate.properties not found
+12:58:24,018  INFO Environment:814 - Bytecode provider name : javassist
+12:58:24,024  INFO Environment:695 - using JDK 1.4 java.sql.Timestamp handling
+12:58:24,194  INFO Configuration:2156 - configuring from resource: /hibernate.cfg.xml
+12:58:24,195  INFO Configuration:2175 - Configuration resource: /hibernate.cfg.xml
+12:58:24,369  INFO Configuration:2297 - Configured SessionFactory: null
+12:58:24,493  INFO Configuration:1676 - Hibernate Validator not found: ignoring
+12:58:24,501  INFO HibernateSearchEventListenerRegister:75 - Unable to find org.hibernate.search.event.FullTextIndexEventListener on the classpath. Hibernate Search is not enabled.
+12:58:24,512  INFO DriverManagerConnectionProvider:64 - Using Hibernate built-in connection pool (not for production use!)
+12:58:24,513  INFO DriverManagerConnectionProvider:65 - Hibernate connection pool size: 20
+12:58:24,513  INFO DriverManagerConnectionProvider:68 - autocommit mode: true
+12:58:24,525  INFO DriverManagerConnectionProvider:103 - using driver: com.mysql.jdbc.Driver at URL: jdbc:mysql://127.0.0.1:3306/julyedu
+12:58:24,525  INFO DriverManagerConnectionProvider:109 - connection properties: {user=root, password=****, autocommit=true}
+12:58:25,031  INFO Dialect:136 - Using dialect: org.hibernate.dialect.MySQLDialect
+12:58:25,051  INFO JdbcSupportLoader:79 - Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+12:58:25,051  INFO SettingsFactory:126 - Database ->
+       name : MySQL
+    version : 5.5.13
+      major : 5
+      minor : 5
+12:58:25,052  INFO SettingsFactory:132 - Driver ->
+       name : MySQL-AB JDBC Driver
+    version : mysql-connector-java-5.1.13 ( Revision: ${bzr.revision-id} )
+      major : 5
+      minor : 1
+12:58:25,054  INFO TransactionFactoryFactory:62 - Using default transaction strategy (direct JDBC transactions)
+12:58:25,057  INFO TransactionManagerLookupFactory:83 - No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+12:58:25,058  INFO SettingsFactory:179 - Automatic flush during beforeCompletion(): disabled
+12:58:25,060  INFO SettingsFactory:183 - Automatic session close at end of transaction: disabled
+12:58:25,060  INFO SettingsFactory:190 - JDBC batch size: 15
+12:58:25,061  INFO SettingsFactory:193 - JDBC batch updates for versioned data: disabled
+12:58:25,063  INFO SettingsFactory:198 - Scrollable result sets: enabled
+12:58:25,063  INFO SettingsFactory:206 - JDBC3 getGeneratedKeys(): enabled
+12:58:25,063  INFO SettingsFactory:214 - Connection release mode: auto
+12:58:25,065  INFO SettingsFactory:238 - Maximum outer join fetch depth: 2
+12:58:25,066  INFO SettingsFactory:241 - Default batch fetch size: 1
+12:58:25,066  INFO SettingsFactory:245 - Generate SQL with comments: disabled
+12:58:25,066  INFO SettingsFactory:249 - Order SQL updates by primary key: disabled
+12:58:25,066  INFO SettingsFactory:253 - Order SQL inserts for batching: disabled
+12:58:25,066  INFO SettingsFactory:431 - Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+12:58:25,069  INFO ASTQueryTranslatorFactory:47 - Using ASTQueryTranslatorFactory
+12:58:25,070  INFO SettingsFactory:261 - Query language substitutions: {}
+12:58:25,070  INFO SettingsFactory:266 - JPA-QL strict compliance: disabled
+12:58:25,070  INFO SettingsFactory:271 - Second-level cache: enabled
+12:58:25,071  INFO SettingsFactory:275 - Query cache: disabled
+12:58:25,071  INFO SettingsFactory:406 - Cache region factory : org.hibernate.cache.impl.NoCachingRegionFactory
+12:58:25,075  INFO SettingsFactory:285 - Optimize cache for minimal puts: disabled
+12:58:25,075  INFO SettingsFactory:294 - Structured second-level cache entries: disabled
+12:58:25,086  INFO SettingsFactory:314 - Echoing all SQL to stdout
+12:58:25,087  INFO SettingsFactory:323 - Statistics: disabled
+12:58:25,087  INFO SettingsFactory:327 - Deleted entity synthetic identifier rollback: disabled
+12:58:25,088  INFO SettingsFactory:343 - Default entity-mode: pojo
+12:58:25,088  INFO SettingsFactory:347 - Named query checking : enabled
+12:58:25,088  INFO SettingsFactory:351 - Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+12:58:25,158  INFO SessionFactoryImpl:202 - building session factory
+12:58:25,168  INFO BasicTypeRegistry:150 - Type registration [clob] overrides previous : org.hibernate.type.ClobType@7b0aef
+12:58:25,168  INFO BasicTypeRegistry:150 - Type registration [java.sql.Clob] overrides previous : org.hibernate.type.ClobType@7b0aef
+12:58:25,168  INFO BasicTypeRegistry:150 - Type registration [materialized_blob] overrides previous : org.hibernate.type.MaterializedBlobType@b0058
+12:58:25,168  INFO BasicTypeRegistry:150 - Type registration [blob] overrides previous : org.hibernate.type.BlobType@439aa9
+12:58:25,169  INFO BasicTypeRegistry:150 - Type registration [java.sql.Blob] overrides previous : org.hibernate.type.BlobType@439aa9
+12:58:25,169  INFO BasicTypeRegistry:150 - Type registration [materialized_clob] overrides previous : org.hibernate.type.MaterializedClobType@5ed596
+12:58:25,169  INFO BasicTypeRegistry:150 - Type registration [wrapper_materialized_blob] overrides previous : org.hibernate.type.WrappedMaterializedBlobType@188ef1
+12:58:25,169  INFO BasicTypeRegistry:150 - Type registration [wrapper_characters_clob] overrides previous : org.hibernate.type.CharacterArrayClobType@50afdd
+12:58:25,169  INFO BasicTypeRegistry:150 - Type registration [characters_clob] overrides previous : org.hibernate.type.PrimitiveCharacterArrayClobType@149eef3
+12:58:25,425  INFO SessionFactoryObjectFactory:105 - Not binding factory to JNDI, no JNDI name configured
+12:58:25,473  INFO SchemaUpdate:155 - Running hbm2ddl schema update
+12:58:25,473  INFO SchemaUpdate:167 - fetching database metadata
+12:58:25,475  INFO SchemaUpdate:179 - updating schema
+12:58:25,482  INFO SchemaUpdate:217 - schema update complete
+13:56:44,435  INFO Version:37 - Hibernate Commons Annotations 3.2.0.Final
+13:56:44,480  INFO Environment:603 - Hibernate 3.6.10.Final
+13:56:44,497  INFO Environment:636 - hibernate.properties not found
+13:56:44,510  INFO Environment:814 - Bytecode provider name : javassist
+13:56:44,516  INFO Environment:695 - using JDK 1.4 java.sql.Timestamp handling
+13:56:44,689  INFO Configuration:2156 - configuring from resource: /hibernate.cfg.xml
+13:56:44,692  INFO Configuration:2175 - Configuration resource: /hibernate.cfg.xml
+13:56:44,905  INFO Configuration:2297 - Configured SessionFactory: null
+13:56:45,023  INFO Configuration:1676 - Hibernate Validator not found: ignoring
+13:56:45,033  INFO HibernateSearchEventListenerRegister:75 - Unable to find org.hibernate.search.event.FullTextIndexEventListener on the classpath. Hibernate Search is not enabled.
+13:56:45,041  INFO DriverManagerConnectionProvider:64 - Using Hibernate built-in connection pool (not for production use!)
+13:56:45,041  INFO DriverManagerConnectionProvider:65 - Hibernate connection pool size: 20
+13:56:45,041  INFO DriverManagerConnectionProvider:68 - autocommit mode: true
+13:56:45,055  INFO DriverManagerConnectionProvider:103 - using driver: com.mysql.jdbc.Driver at URL: jdbc:mysql://127.0.0.1:3306/julyedu
+13:56:45,055  INFO DriverManagerConnectionProvider:109 - connection properties: {user=root, password=****, autocommit=true}
+13:56:45,596  INFO Dialect:136 - Using dialect: org.hibernate.dialect.MySQLDialect
+13:56:45,618  INFO JdbcSupportLoader:79 - Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+13:56:45,618  INFO SettingsFactory:126 - Database ->
+       name : MySQL
+    version : 5.5.13
+      major : 5
+      minor : 5
+13:56:45,619  INFO SettingsFactory:132 - Driver ->
+       name : MySQL-AB JDBC Driver
+    version : mysql-connector-java-5.1.13 ( Revision: ${bzr.revision-id} )
+      major : 5
+      minor : 1
+13:56:45,621  INFO TransactionFactoryFactory:62 - Using default transaction strategy (direct JDBC transactions)
+13:56:45,624  INFO TransactionManagerLookupFactory:83 - No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+13:56:45,625  INFO SettingsFactory:179 - Automatic flush during beforeCompletion(): disabled
+13:56:45,625  INFO SettingsFactory:183 - Automatic session close at end of transaction: disabled
+13:56:45,625  INFO SettingsFactory:190 - JDBC batch size: 15
+13:56:45,625  INFO SettingsFactory:193 - JDBC batch updates for versioned data: disabled
+13:56:45,627  INFO SettingsFactory:198 - Scrollable result sets: enabled
+13:56:45,627  INFO SettingsFactory:206 - JDBC3 getGeneratedKeys(): enabled
+13:56:45,627  INFO SettingsFactory:214 - Connection release mode: auto
+13:56:45,629  INFO SettingsFactory:238 - Maximum outer join fetch depth: 2
+13:56:45,629  INFO SettingsFactory:241 - Default batch fetch size: 1
+13:56:45,630  INFO SettingsFactory:245 - Generate SQL with comments: disabled
+13:56:45,630  INFO SettingsFactory:249 - Order SQL updates by primary key: disabled
+13:56:45,633  INFO SettingsFactory:253 - Order SQL inserts for batching: disabled
+13:56:45,633  INFO SettingsFactory:431 - Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+13:56:45,636  INFO ASTQueryTranslatorFactory:47 - Using ASTQueryTranslatorFactory
+13:56:45,637  INFO SettingsFactory:261 - Query language substitutions: {}
+13:56:45,637  INFO SettingsFactory:266 - JPA-QL strict compliance: disabled
+13:56:45,637  INFO SettingsFactory:271 - Second-level cache: enabled
+13:56:45,637  INFO SettingsFactory:275 - Query cache: disabled
+13:56:45,638  INFO SettingsFactory:406 - Cache region factory : org.hibernate.cache.impl.NoCachingRegionFactory
+13:56:45,640  INFO SettingsFactory:285 - Optimize cache for minimal puts: disabled
+13:56:45,640  INFO SettingsFactory:294 - Structured second-level cache entries: disabled
+13:56:45,649  INFO SettingsFactory:314 - Echoing all SQL to stdout
+13:56:45,653  INFO SettingsFactory:323 - Statistics: disabled
+13:56:45,654  INFO SettingsFactory:327 - Deleted entity synthetic identifier rollback: disabled
+13:56:45,654  INFO SettingsFactory:343 - Default entity-mode: pojo
+13:56:45,654  INFO SettingsFactory:347 - Named query checking : enabled
+13:56:45,655  INFO SettingsFactory:351 - Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+13:56:45,696  INFO SessionFactoryImpl:202 - building session factory
+13:56:45,713  INFO BasicTypeRegistry:150 - Type registration [blob] overrides previous : org.hibernate.type.BlobType@5ed596
+13:56:45,713  INFO BasicTypeRegistry:150 - Type registration [java.sql.Blob] overrides previous : org.hibernate.type.BlobType@5ed596
+13:56:45,713  INFO BasicTypeRegistry:150 - Type registration [wrapper_characters_clob] overrides previous : org.hibernate.type.CharacterArrayClobType@188ef1
+13:56:45,714  INFO BasicTypeRegistry:150 - Type registration [materialized_clob] overrides previous : org.hibernate.type.MaterializedClobType@50afdd
+13:56:45,714  INFO BasicTypeRegistry:150 - Type registration [materialized_blob] overrides previous : org.hibernate.type.MaterializedBlobType@149eef3
+13:56:45,714  INFO BasicTypeRegistry:150 - Type registration [characters_clob] overrides previous : org.hibernate.type.PrimitiveCharacterArrayClobType@e6942e
+13:56:45,715  INFO BasicTypeRegistry:150 - Type registration [wrapper_materialized_blob] overrides previous : org.hibernate.type.WrappedMaterializedBlobType@a66d4
+13:56:45,715  INFO BasicTypeRegistry:150 - Type registration [clob] overrides previous : org.hibernate.type.ClobType@e51ca2
+13:56:45,715  INFO BasicTypeRegistry:150 - Type registration [java.sql.Clob] overrides previous : org.hibernate.type.ClobType@e51ca2
+13:56:46,077  INFO SessionFactoryObjectFactory:105 - Not binding factory to JNDI, no JNDI name configured
+13:56:46,090  INFO SchemaUpdate:155 - Running hbm2ddl schema update
+13:56:46,091  INFO SchemaUpdate:167 - fetching database metadata
+13:56:46,092  INFO SchemaUpdate:179 - updating schema
+13:56:46,100  INFO SchemaUpdate:217 - schema update complete
+14:40:27,533  INFO Version:37 - Hibernate Commons Annotations 3.2.0.Final
+14:40:27,596  INFO Environment:603 - Hibernate 3.6.10.Final
+14:40:27,604  INFO Environment:636 - hibernate.properties not found
+14:40:27,610  INFO Environment:814 - Bytecode provider name : javassist
+14:40:27,627  INFO Environment:695 - using JDK 1.4 java.sql.Timestamp handling
+14:40:27,795  INFO Configuration:2156 - configuring from resource: /hibernate.cfg.xml
+14:40:27,796  INFO Configuration:2175 - Configuration resource: /hibernate.cfg.xml
+14:40:27,965  INFO Configuration:2297 - Configured SessionFactory: null
+14:40:28,058  INFO Configuration:1676 - Hibernate Validator not found: ignoring
+14:40:28,068  INFO HibernateSearchEventListenerRegister:75 - Unable to find org.hibernate.search.event.FullTextIndexEventListener on the classpath. Hibernate Search is not enabled.
+14:40:28,079  INFO DriverManagerConnectionProvider:64 - Using Hibernate built-in connection pool (not for production use!)
+14:40:28,092  INFO DriverManagerConnectionProvider:65 - Hibernate connection pool size: 20
+14:40:28,092  INFO DriverManagerConnectionProvider:68 - autocommit mode: true
+14:40:28,103  INFO DriverManagerConnectionProvider:103 - using driver: com.mysql.jdbc.Driver at URL: jdbc:mysql://127.0.0.1:3306/julyedu
+14:40:28,104  INFO DriverManagerConnectionProvider:109 - connection properties: {user=root, password=****, autocommit=true}
+14:40:28,637  INFO Dialect:136 - Using dialect: org.hibernate.dialect.MySQLDialect
+14:40:28,672  INFO JdbcSupportLoader:79 - Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+14:40:28,673  INFO SettingsFactory:126 - Database ->
+       name : MySQL
+    version : 5.5.13
+      major : 5
+      minor : 5
+14:40:28,673  INFO SettingsFactory:132 - Driver ->
+       name : MySQL-AB JDBC Driver
+    version : mysql-connector-java-5.1.13 ( Revision: ${bzr.revision-id} )
+      major : 5
+      minor : 1
+14:40:28,676  INFO TransactionFactoryFactory:62 - Using default transaction strategy (direct JDBC transactions)
+14:40:28,680  INFO TransactionManagerLookupFactory:83 - No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+14:40:28,681  INFO SettingsFactory:179 - Automatic flush during beforeCompletion(): disabled
+14:40:28,681  INFO SettingsFactory:183 - Automatic session close at end of transaction: disabled
+14:40:28,681  INFO SettingsFactory:190 - JDBC batch size: 15
+14:40:28,682  INFO SettingsFactory:193 - JDBC batch updates for versioned data: disabled
+14:40:28,683  INFO SettingsFactory:198 - Scrollable result sets: enabled
+14:40:28,683  INFO SettingsFactory:206 - JDBC3 getGeneratedKeys(): enabled
+14:40:28,684  INFO SettingsFactory:214 - Connection release mode: auto
+14:40:28,685  INFO SettingsFactory:238 - Maximum outer join fetch depth: 2
+14:40:28,686  INFO SettingsFactory:241 - Default batch fetch size: 1
+14:40:28,686  INFO SettingsFactory:245 - Generate SQL with comments: disabled
+14:40:28,687  INFO SettingsFactory:249 - Order SQL updates by primary key: disabled
+14:40:28,688  INFO SettingsFactory:253 - Order SQL inserts for batching: disabled
+14:40:28,688  INFO SettingsFactory:431 - Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+14:40:28,693  INFO ASTQueryTranslatorFactory:47 - Using ASTQueryTranslatorFactory
+14:40:28,694  INFO SettingsFactory:261 - Query language substitutions: {}
+14:40:28,694  INFO SettingsFactory:266 - JPA-QL strict compliance: disabled
+14:40:28,694  INFO SettingsFactory:271 - Second-level cache: enabled
+14:40:28,695  INFO SettingsFactory:275 - Query cache: disabled
+14:40:28,695  INFO SettingsFactory:406 - Cache region factory : org.hibernate.cache.impl.NoCachingRegionFactory
+14:40:28,697  INFO SettingsFactory:285 - Optimize cache for minimal puts: disabled
+14:40:28,698  INFO SettingsFactory:294 - Structured second-level cache entries: disabled
+14:40:28,710  INFO SettingsFactory:314 - Echoing all SQL to stdout
+14:40:28,712  INFO SettingsFactory:323 - Statistics: disabled
+14:40:28,714  INFO SettingsFactory:327 - Deleted entity synthetic identifier rollback: disabled
+14:40:28,714  INFO SettingsFactory:343 - Default entity-mode: pojo
+14:40:28,714  INFO SettingsFactory:347 - Named query checking : enabled
+14:40:28,715  INFO SettingsFactory:351 - Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+14:40:28,758  INFO SessionFactoryImpl:202 - building session factory
+14:40:28,771  INFO BasicTypeRegistry:150 - Type registration [wrapper_characters_clob] overrides previous : org.hibernate.type.CharacterArrayClobType@e2081
+14:40:28,772  INFO BasicTypeRegistry:150 - Type registration [clob] overrides previous : org.hibernate.type.ClobType@177fc5c
+14:40:28,772  INFO BasicTypeRegistry:150 - Type registration [java.sql.Clob] overrides previous : org.hibernate.type.ClobType@177fc5c
+14:40:28,772  INFO BasicTypeRegistry:150 - Type registration [materialized_clob] overrides previous : org.hibernate.type.MaterializedClobType@591d98
+14:40:28,773  INFO BasicTypeRegistry:150 - Type registration [blob] overrides previous : org.hibernate.type.BlobType@a5fce7
+14:40:28,773  INFO BasicTypeRegistry:150 - Type registration [java.sql.Blob] overrides previous : org.hibernate.type.BlobType@a5fce7
+14:40:28,773  INFO BasicTypeRegistry:150 - Type registration [wrapper_materialized_blob] overrides previous : org.hibernate.type.WrappedMaterializedBlobType@17ea934
+14:40:28,773  INFO BasicTypeRegistry:150 - Type registration [characters_clob] overrides previous : org.hibernate.type.PrimitiveCharacterArrayClobType@96af55
+14:40:28,774  INFO BasicTypeRegistry:150 - Type registration [materialized_blob] overrides previous : org.hibernate.type.MaterializedBlobType@d11693
+14:40:29,076  INFO SessionFactoryObjectFactory:105 - Not binding factory to JNDI, no JNDI name configured
+14:40:29,088  INFO SchemaUpdate:155 - Running hbm2ddl schema update
+14:40:29,089  INFO SchemaUpdate:167 - fetching database metadata
+14:40:29,090  INFO SchemaUpdate:179 - updating schema
+14:40:29,095  INFO SchemaUpdate:217 - schema update complete
+14:58:25,366  INFO Version:37 - Hibernate Commons Annotations 3.2.0.Final
+14:58:25,404  INFO Environment:603 - Hibernate 3.6.10.Final
+14:58:25,407  INFO Environment:636 - hibernate.properties not found
+14:58:25,435  INFO Environment:814 - Bytecode provider name : javassist
+14:58:25,450  INFO Environment:695 - using JDK 1.4 java.sql.Timestamp handling
+14:58:25,676  INFO Configuration:2156 - configuring from resource: /hibernate.cfg.xml
+14:58:25,680  INFO Configuration:2175 - Configuration resource: /hibernate.cfg.xml
+14:58:25,904  INFO Configuration:2297 - Configured SessionFactory: null
+14:58:25,989  INFO Configuration:1676 - Hibernate Validator not found: ignoring
+14:58:26,012  INFO HibernateSearchEventListenerRegister:75 - Unable to find org.hibernate.search.event.FullTextIndexEventListener on the classpath. Hibernate Search is not enabled.
+14:58:26,023  INFO DriverManagerConnectionProvider:64 - Using Hibernate built-in connection pool (not for production use!)
+14:58:26,024  INFO DriverManagerConnectionProvider:65 - Hibernate connection pool size: 20
+14:58:26,025  INFO DriverManagerConnectionProvider:68 - autocommit mode: true
+14:58:26,053  INFO DriverManagerConnectionProvider:103 - using driver: com.mysql.jdbc.Driver at URL: jdbc:mysql://127.0.0.1:3306/julyedu
+14:58:26,055  INFO DriverManagerConnectionProvider:109 - connection properties: {user=root, password=****, autocommit=true}
+14:58:26,577  INFO Dialect:136 - Using dialect: org.hibernate.dialect.MySQLDialect
+14:58:26,637  INFO JdbcSupportLoader:79 - Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+14:58:26,638  INFO SettingsFactory:126 - Database ->
+       name : MySQL
+    version : 5.5.13
+      major : 5
+      minor : 5
+14:58:26,638  INFO SettingsFactory:132 - Driver ->
+       name : MySQL-AB JDBC Driver
+    version : mysql-connector-java-5.1.13 ( Revision: ${bzr.revision-id} )
+      major : 5
+      minor : 1
+14:58:26,641  INFO TransactionFactoryFactory:62 - Using default transaction strategy (direct JDBC transactions)
+14:58:26,651  INFO TransactionManagerLookupFactory:83 - No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+14:58:26,652  INFO SettingsFactory:179 - Automatic flush during beforeCompletion(): disabled
+14:58:26,652  INFO SettingsFactory:183 - Automatic session close at end of transaction: disabled
+14:58:26,652  INFO SettingsFactory:190 - JDBC batch size: 15
+14:58:26,653  INFO SettingsFactory:193 - JDBC batch updates for versioned data: disabled
+14:58:26,656  INFO SettingsFactory:198 - Scrollable result sets: enabled
+14:58:26,680  INFO SettingsFactory:206 - JDBC3 getGeneratedKeys(): enabled
+14:58:26,681  INFO SettingsFactory:214 - Connection release mode: auto
+14:58:26,683  INFO SettingsFactory:238 - Maximum outer join fetch depth: 2
+14:58:26,684  INFO SettingsFactory:241 - Default batch fetch size: 1
+14:58:26,684  INFO SettingsFactory:245 - Generate SQL with comments: disabled
+14:58:26,684  INFO SettingsFactory:249 - Order SQL updates by primary key: disabled
+14:58:26,684  INFO SettingsFactory:253 - Order SQL inserts for batching: disabled
+14:58:26,685  INFO SettingsFactory:431 - Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+14:58:26,700  INFO ASTQueryTranslatorFactory:47 - Using ASTQueryTranslatorFactory
+14:58:26,700  INFO SettingsFactory:261 - Query language substitutions: {}
+14:58:26,701  INFO SettingsFactory:266 - JPA-QL strict compliance: disabled
+14:58:26,701  INFO SettingsFactory:271 - Second-level cache: enabled
+14:58:26,702  INFO SettingsFactory:275 - Query cache: disabled
+14:58:26,702  INFO SettingsFactory:406 - Cache region factory : org.hibernate.cache.impl.NoCachingRegionFactory
+14:58:26,704  INFO SettingsFactory:285 - Optimize cache for minimal puts: disabled
+14:58:26,705  INFO SettingsFactory:294 - Structured second-level cache entries: disabled
+14:58:26,714  INFO SettingsFactory:314 - Echoing all SQL to stdout
+14:58:26,715  INFO SettingsFactory:323 - Statistics: disabled
+14:58:26,716  INFO SettingsFactory:327 - Deleted entity synthetic identifier rollback: disabled
+14:58:26,716  INFO SettingsFactory:343 - Default entity-mode: pojo
+14:58:26,716  INFO SettingsFactory:347 - Named query checking : enabled
+14:58:26,717  INFO SettingsFactory:351 - Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+14:58:26,770  INFO SessionFactoryImpl:202 - building session factory
+14:58:26,788  INFO BasicTypeRegistry:150 - Type registration [characters_clob] overrides previous : org.hibernate.type.PrimitiveCharacterArrayClobType@7ca7e4
+14:58:26,795  INFO BasicTypeRegistry:150 - Type registration [blob] overrides previous : org.hibernate.type.BlobType@1f2a681
+14:58:26,796  INFO BasicTypeRegistry:150 - Type registration [java.sql.Blob] overrides previous : org.hibernate.type.BlobType@1f2a681
+14:58:26,796  INFO BasicTypeRegistry:150 - Type registration [wrapper_materialized_blob] overrides previous : org.hibernate.type.WrappedMaterializedBlobType@1919998
+14:58:26,797  INFO BasicTypeRegistry:150 - Type registration [materialized_clob] overrides previous : org.hibernate.type.MaterializedClobType@1fb0468
+14:58:26,797  INFO BasicTypeRegistry:150 - Type registration [clob] overrides previous : org.hibernate.type.ClobType@de4f03
+14:58:26,797  INFO BasicTypeRegistry:150 - Type registration [java.sql.Clob] overrides previous : org.hibernate.type.ClobType@de4f03
+14:58:26,808  INFO BasicTypeRegistry:150 - Type registration [wrapper_characters_clob] overrides previous : org.hibernate.type.CharacterArrayClobType@1157c90
+14:58:26,809  INFO BasicTypeRegistry:150 - Type registration [materialized_blob] overrides previous : org.hibernate.type.MaterializedBlobType@1a4ef37
+14:58:27,076  INFO SessionFactoryObjectFactory:105 - Not binding factory to JNDI, no JNDI name configured
+14:58:27,087  INFO SchemaUpdate:155 - Running hbm2ddl schema update
+14:58:27,088  INFO SchemaUpdate:167 - fetching database metadata
+14:58:27,089  INFO SchemaUpdate:179 - updating schema
+14:58:27,093  INFO SchemaUpdate:217 - schema update complete
+15:12:33,227  INFO Version:37 - Hibernate Commons Annotations 3.2.0.Final
+15:12:33,278  INFO Environment:603 - Hibernate 3.6.10.Final
+15:12:33,280  INFO Environment:636 - hibernate.properties not found
+15:12:33,289  INFO Environment:814 - Bytecode provider name : javassist
+15:12:33,297  INFO Environment:695 - using JDK 1.4 java.sql.Timestamp handling
+15:12:33,471  INFO Configuration:2156 - configuring from resource: /hibernate.cfg.xml
+15:12:33,472  INFO Configuration:2175 - Configuration resource: /hibernate.cfg.xml
+15:12:33,665  INFO Configuration:2297 - Configured SessionFactory: null
+15:12:33,765  INFO Configuration:1676 - Hibernate Validator not found: ignoring
+15:12:33,779  INFO HibernateSearchEventListenerRegister:75 - Unable to find org.hibernate.search.event.FullTextIndexEventListener on the classpath. Hibernate Search is not enabled.
+15:12:33,786  INFO DriverManagerConnectionProvider:64 - Using Hibernate built-in connection pool (not for production use!)
+15:12:33,786  INFO DriverManagerConnectionProvider:65 - Hibernate connection pool size: 20
+15:12:33,786  INFO DriverManagerConnectionProvider:68 - autocommit mode: true
+15:12:33,796  INFO DriverManagerConnectionProvider:103 - using driver: com.mysql.jdbc.Driver at URL: jdbc:mysql://127.0.0.1:3306/julyedu
+15:12:33,796  INFO DriverManagerConnectionProvider:109 - connection properties: {user=root, password=****, autocommit=true}
+15:12:34,239  INFO Dialect:136 - Using dialect: org.hibernate.dialect.MySQLDialect
+15:12:34,285  INFO JdbcSupportLoader:79 - Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+15:12:34,285  INFO SettingsFactory:126 - Database ->
+       name : MySQL
+    version : 5.5.13
+      major : 5
+      minor : 5
+15:12:34,285  INFO SettingsFactory:132 - Driver ->
+       name : MySQL-AB JDBC Driver
+    version : mysql-connector-java-5.1.13 ( Revision: ${bzr.revision-id} )
+      major : 5
+      minor : 1
+15:12:34,291  INFO TransactionFactoryFactory:62 - Using default transaction strategy (direct JDBC transactions)
+15:12:34,296  INFO TransactionManagerLookupFactory:83 - No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+15:12:34,296  INFO SettingsFactory:179 - Automatic flush during beforeCompletion(): disabled
+15:12:34,297  INFO SettingsFactory:183 - Automatic session close at end of transaction: disabled
+15:12:34,297  INFO SettingsFactory:190 - JDBC batch size: 15
+15:12:34,297  INFO SettingsFactory:193 - JDBC batch updates for versioned data: disabled
+15:12:34,298  INFO SettingsFactory:198 - Scrollable result sets: enabled
+15:12:34,299  INFO SettingsFactory:206 - JDBC3 getGeneratedKeys(): enabled
+15:12:34,300  INFO SettingsFactory:214 - Connection release mode: auto
+15:12:34,302  INFO SettingsFactory:238 - Maximum outer join fetch depth: 2
+15:12:34,302  INFO SettingsFactory:241 - Default batch fetch size: 1
+15:12:34,302  INFO SettingsFactory:245 - Generate SQL with comments: disabled
+15:12:34,302  INFO SettingsFactory:249 - Order SQL updates by primary key: disabled
+15:12:34,303  INFO SettingsFactory:253 - Order SQL inserts for batching: disabled
+15:12:34,303  INFO SettingsFactory:431 - Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+15:12:34,308  INFO ASTQueryTranslatorFactory:47 - Using ASTQueryTranslatorFactory
+15:12:34,309  INFO SettingsFactory:261 - Query language substitutions: {}
+15:12:34,310  INFO SettingsFactory:266 - JPA-QL strict compliance: disabled
+15:12:34,310  INFO SettingsFactory:271 - Second-level cache: enabled
+15:12:34,310  INFO SettingsFactory:275 - Query cache: disabled
+15:12:34,310  INFO SettingsFactory:406 - Cache region factory : org.hibernate.cache.impl.NoCachingRegionFactory
+15:12:34,312  INFO SettingsFactory:285 - Optimize cache for minimal puts: disabled
+15:12:34,312  INFO SettingsFactory:294 - Structured second-level cache entries: disabled
+15:12:34,321  INFO SettingsFactory:314 - Echoing all SQL to stdout
+15:12:34,323  INFO SettingsFactory:323 - Statistics: disabled
+15:12:34,323  INFO SettingsFactory:327 - Deleted entity synthetic identifier rollback: disabled
+15:12:34,324  INFO SettingsFactory:343 - Default entity-mode: pojo
+15:12:34,324  INFO SettingsFactory:347 - Named query checking : enabled
+15:12:34,324  INFO SettingsFactory:351 - Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+15:12:34,364  INFO SessionFactoryImpl:202 - building session factory
+15:12:34,395  INFO BasicTypeRegistry:150 - Type registration [characters_clob] overrides previous : org.hibernate.type.PrimitiveCharacterArrayClobType@1f2a681
+15:12:34,401  INFO BasicTypeRegistry:150 - Type registration [blob] overrides previous : org.hibernate.type.BlobType@1919998
+15:12:34,402  INFO BasicTypeRegistry:150 - Type registration [java.sql.Blob] overrides previous : org.hibernate.type.BlobType@1919998
+15:12:34,402  INFO BasicTypeRegistry:150 - Type registration [wrapper_materialized_blob] overrides previous : org.hibernate.type.WrappedMaterializedBlobType@1fb0468
+15:12:34,403  INFO BasicTypeRegistry:150 - Type registration [materialized_clob] overrides previous : org.hibernate.type.MaterializedClobType@de4f03
+15:12:34,403  INFO BasicTypeRegistry:150 - Type registration [clob] overrides previous : org.hibernate.type.ClobType@1157c90
+15:12:34,403  INFO BasicTypeRegistry:150 - Type registration [java.sql.Clob] overrides previous : org.hibernate.type.ClobType@1157c90
+15:12:34,403  INFO BasicTypeRegistry:150 - Type registration [wrapper_characters_clob] overrides previous : org.hibernate.type.CharacterArrayClobType@1a4ef37
+15:12:34,403  INFO BasicTypeRegistry:150 - Type registration [materialized_blob] overrides previous : org.hibernate.type.MaterializedBlobType@1551d57
+15:12:34,789  INFO SessionFactoryObjectFactory:105 - Not binding factory to JNDI, no JNDI name configured
+15:12:34,828  INFO SchemaUpdate:155 - Running hbm2ddl schema update
+15:12:34,828  INFO SchemaUpdate:167 - fetching database metadata
+15:12:34,829  INFO SchemaUpdate:179 - updating schema
+15:12:34,833  INFO SchemaUpdate:217 - schema update complete
+15:13:28,979  INFO Version:37 - Hibernate Commons Annotations 3.2.0.Final
+15:13:28,998  INFO Environment:603 - Hibernate 3.6.10.Final
+15:13:29,000  INFO Environment:636 - hibernate.properties not found
+15:13:29,006  INFO Environment:814 - Bytecode provider name : javassist
+15:13:29,020  INFO Environment:695 - using JDK 1.4 java.sql.Timestamp handling
+15:13:29,197  INFO Configuration:2156 - configuring from resource: /hibernate.cfg.xml
+15:13:29,197  INFO Configuration:2175 - Configuration resource: /hibernate.cfg.xml
+15:13:29,398  INFO Configuration:2297 - Configured SessionFactory: null
+15:13:29,503  INFO Configuration:1676 - Hibernate Validator not found: ignoring
+15:13:29,518  INFO HibernateSearchEventListenerRegister:75 - Unable to find org.hibernate.search.event.FullTextIndexEventListener on the classpath. Hibernate Search is not enabled.
+15:13:29,533  INFO DriverManagerConnectionProvider:64 - Using Hibernate built-in connection pool (not for production use!)
+15:13:29,534  INFO DriverManagerConnectionProvider:65 - Hibernate connection pool size: 20
+15:13:29,534  INFO DriverManagerConnectionProvider:68 - autocommit mode: true
+15:13:29,546  INFO DriverManagerConnectionProvider:103 - using driver: com.mysql.jdbc.Driver at URL: jdbc:mysql://127.0.0.1:3306/julyedu
+15:13:29,547  INFO DriverManagerConnectionProvider:109 - connection properties: {user=root, password=****, autocommit=true}
+15:13:30,086  INFO Dialect:136 - Using dialect: org.hibernate.dialect.MySQLDialect
+15:13:30,116  INFO JdbcSupportLoader:79 - Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+15:13:30,116  INFO SettingsFactory:126 - Database ->
+       name : MySQL
+    version : 5.5.13
+      major : 5
+      minor : 5
+15:13:30,117  INFO SettingsFactory:132 - Driver ->
+       name : MySQL-AB JDBC Driver
+    version : mysql-connector-java-5.1.13 ( Revision: ${bzr.revision-id} )
+      major : 5
+      minor : 1
+15:13:30,120  INFO TransactionFactoryFactory:62 - Using default transaction strategy (direct JDBC transactions)
+15:13:30,128  INFO TransactionManagerLookupFactory:83 - No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+15:13:30,128  INFO SettingsFactory:179 - Automatic flush during beforeCompletion(): disabled
+15:13:30,129  INFO SettingsFactory:183 - Automatic session close at end of transaction: disabled
+15:13:30,129  INFO SettingsFactory:190 - JDBC batch size: 15
+15:13:30,130  INFO SettingsFactory:193 - JDBC batch updates for versioned data: disabled
+15:13:30,131  INFO SettingsFactory:198 - Scrollable result sets: enabled
+15:13:30,132  INFO SettingsFactory:206 - JDBC3 getGeneratedKeys(): enabled
+15:13:30,132  INFO SettingsFactory:214 - Connection release mode: auto
+15:13:30,134  INFO SettingsFactory:238 - Maximum outer join fetch depth: 2
+15:13:30,135  INFO SettingsFactory:241 - Default batch fetch size: 1
+15:13:30,135  INFO SettingsFactory:245 - Generate SQL with comments: disabled
+15:13:30,135  INFO SettingsFactory:249 - Order SQL updates by primary key: disabled
+15:13:30,135  INFO SettingsFactory:253 - Order SQL inserts for batching: disabled
+15:13:30,135  INFO SettingsFactory:431 - Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+15:13:30,141  INFO ASTQueryTranslatorFactory:47 - Using ASTQueryTranslatorFactory
+15:13:30,142  INFO SettingsFactory:261 - Query language substitutions: {}
+15:13:30,143  INFO SettingsFactory:266 - JPA-QL strict compliance: disabled
+15:13:30,143  INFO SettingsFactory:271 - Second-level cache: enabled
+15:13:30,144  INFO SettingsFactory:275 - Query cache: disabled
+15:13:30,144  INFO SettingsFactory:406 - Cache region factory : org.hibernate.cache.impl.NoCachingRegionFactory
+15:13:30,145  INFO SettingsFactory:285 - Optimize cache for minimal puts: disabled
+15:13:30,146  INFO SettingsFactory:294 - Structured second-level cache entries: disabled
+15:13:30,161  INFO SettingsFactory:314 - Echoing all SQL to stdout
+15:13:30,164  INFO SettingsFactory:323 - Statistics: disabled
+15:13:30,164  INFO SettingsFactory:327 - Deleted entity synthetic identifier rollback: disabled
+15:13:30,165  INFO SettingsFactory:343 - Default entity-mode: pojo
+15:13:30,165  INFO SettingsFactory:347 - Named query checking : enabled
+15:13:30,165  INFO SettingsFactory:351 - Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+15:13:30,211  INFO SessionFactoryImpl:202 - building session factory
+15:13:30,225  INFO BasicTypeRegistry:150 - Type registration [wrapper_materialized_blob] overrides previous : org.hibernate.type.WrappedMaterializedBlobType@1cacaa7
+15:13:30,226  INFO BasicTypeRegistry:150 - Type registration [materialized_blob] overrides previous : org.hibernate.type.MaterializedBlobType@beab46
+15:13:30,226  INFO BasicTypeRegistry:150 - Type registration [clob] overrides previous : org.hibernate.type.ClobType@1de8526
+15:13:30,226  INFO BasicTypeRegistry:150 - Type registration [java.sql.Clob] overrides previous : org.hibernate.type.ClobType@1de8526
+15:13:30,227  INFO BasicTypeRegistry:150 - Type registration [characters_clob] overrides previous : org.hibernate.type.PrimitiveCharacterArrayClobType@1f7911b
+15:13:30,227  INFO BasicTypeRegistry:150 - Type registration [materialized_clob] overrides previous : org.hibernate.type.MaterializedClobType@57c332
+15:13:30,228  INFO BasicTypeRegistry:150 - Type registration [blob] overrides previous : org.hibernate.type.BlobType@1d0258a
+15:13:30,228  INFO BasicTypeRegistry:150 - Type registration [java.sql.Blob] overrides previous : org.hibernate.type.BlobType@1d0258a
+15:13:30,228  INFO BasicTypeRegistry:150 - Type registration [wrapper_characters_clob] overrides previous : org.hibernate.type.CharacterArrayClobType@50b410
+15:13:30,566  INFO SessionFactoryObjectFactory:105 - Not binding factory to JNDI, no JNDI name configured
+15:13:30,579  INFO SchemaUpdate:155 - Running hbm2ddl schema update
+15:13:30,580  INFO SchemaUpdate:167 - fetching database metadata
+15:13:30,581  INFO SchemaUpdate:179 - updating schema
+15:13:30,585  INFO SchemaUpdate:217 - schema update complete
+16:49:15,473 ERROR runtime:60 - Error executing FreeMarker template
+FreeMarker template error:
+The following has evaluated to null or missing:
+==> listInfo.character_maximum_length  [in template "model.ftl" at line 8, column 46]
+
+----
+Tip: It's the step after the last dot that caused this error, not those before it.
+----
+Tip: If the failing expression is known to be legally refer to something that's null or missing, either specify a default value like myOptionalVar!myDefault, or use <#if myOptionalVar??>when-present<#else>when-missing</#if>. (These only cover the last step of the expression; to cover the whole expression, use parenthesis: (myOptionalVar.foo)!myDefault, (myOptionalVar.foo)??
+----
+
+----
+FTL stack trace ("~" means nesting-related):
+	- Failed at: ${listInfo.character_maximum_length}  [in template "model.ftl" at line 8, column 44]
+----
+
+Java stack trace (for programmers):
+----
+freemarker.core.InvalidReferenceException: [... Exception message was already printed; see it above ...]
+	at freemarker.core.InvalidReferenceException.getInstance(InvalidReferenceException.java:116)
+	at freemarker.core.EvalUtil.coerceModelToString(EvalUtil.java:346)
+	at freemarker.core.Expression.evalAndCoerceToString(Expression.java:82)
+	at freemarker.core.DollarVariable.accept(DollarVariable.java:40)
+	at freemarker.core.Environment.visit(Environment.java:312)
+	at freemarker.core.MixedContent.accept(MixedContent.java:62)
+	at freemarker.core.Environment.visitByHiddingParent(Environment.java:333)
+	at freemarker.core.IteratorBlock$Context.runLoop(IteratorBlock.java:159)
+	at freemarker.core.Environment.visitIteratorBlock(Environment.java:559)
+	at freemarker.core.IteratorBlock.accept(IteratorBlock.java:67)
+	at freemarker.core.Environment.visit(Environment.java:312)
+	at freemarker.core.MixedContent.accept(MixedContent.java:62)
+	at freemarker.core.Environment.visit(Environment.java:312)
+	at freemarker.core.Environment.process(Environment.java:290)
+	at freemarker.template.Template.process(Template.java:312)
+	at com.lyt.webtemp.util.FreeMarkerUtil.printTemp(FreeMarkerUtil.java:47)
+	at com.lyt.webtemp.main.TempMain.makeTemp(TempMain.java:79)
+	at com.lyt.webtemp.main.TempMain.getAllTableMetaData(TempMain.java:55)
+	at com.lyt.webtemp.main.TempMain.main(TempMain.java:37)
+16:49:15,535 ERROR runtime:60 - Error executing FreeMarker template
+FreeMarker template error:
+The following has evaluated to null or missing:
+==> listInfo.character_maximum_length  [in template "model.ftl" at line 8, column 46]
+
+----
+Tip: It's the step after the last dot that caused this error, not those before it.
+----
+Tip: If the failing expression is known to be legally refer to something that's null or missing, either specify a default value like myOptionalVar!myDefault, or use <#if myOptionalVar??>when-present<#else>when-missing</#if>. (These only cover the last step of the expression; to cover the whole expression, use parenthesis: (myOptionalVar.foo)!myDefault, (myOptionalVar.foo)??
+----
+
+----
+FTL stack trace ("~" means nesting-related):
+	- Failed at: ${listInfo.character_maximum_length}  [in template "model.ftl" at line 8, column 44]
+----
+
+Java stack trace (for programmers):
+----
+freemarker.core.InvalidReferenceException: [... Exception message was already printed; see it above ...]
+	at freemarker.core.InvalidReferenceException.getInstance(InvalidReferenceException.java:116)
+	at freemarker.core.EvalUtil.coerceModelToString(EvalUtil.java:346)
+	at freemarker.core.Expression.evalAndCoerceToString(Expression.java:82)
+	at freemarker.core.DollarVariable.accept(DollarVariable.java:40)
+	at freemarker.core.Environment.visit(Environment.java:312)
+	at freemarker.core.MixedContent.accept(MixedContent.java:62)
+	at freemarker.core.Environment.visitByHiddingParent(Environment.java:333)
+	at freemarker.core.IteratorBlock$Context.runLoop(IteratorBlock.java:159)
+	at freemarker.core.Environment.visitIteratorBlock(Environment.java:559)
+	at freemarker.core.IteratorBlock.accept(IteratorBlock.java:67)
+	at freemarker.core.Environment.visit(Environment.java:312)
+	at freemarker.core.MixedContent.accept(MixedContent.java:62)
+	at freemarker.core.Environment.visit(Environment.java:312)
+	at freemarker.core.Environment.process(Environment.java:290)
+	at freemarker.template.Template.process(Template.java:312)
+	at com.lyt.webtemp.util.FreeMarkerUtil.write2File(FreeMarkerUtil.java:82)
+	at com.lyt.webtemp.main.TempMain.makeTemp(TempMain.java:81)
+	at com.lyt.webtemp.main.TempMain.getAllTableMetaData(TempMain.java:55)
+	at com.lyt.webtemp.main.TempMain.main(TempMain.java:37)
+16:49:15,671 ERROR runtime:60 - Error executing FreeMarker template
+FreeMarker template error:
+The following has evaluated to null or missing:
+==> listInfo.character_maximum_length  [in template "model.ftl" at line 8, column 46]
+
+----
+Tip: It's the step after the last dot that caused this error, not those before it.
+----
+Tip: If the failing expression is known to be legally refer to something that's null or missing, either specify a default value like myOptionalVar!myDefault, or use <#if myOptionalVar??>when-present<#else>when-missing</#if>. (These only cover the last step of the expression; to cover the whole expression, use parenthesis: (myOptionalVar.foo)!myDefault, (myOptionalVar.foo)??
+----
+
+----
+FTL stack trace ("~" means nesting-related):
+	- Failed at: ${listInfo.character_maximum_length}  [in template "model.ftl" at line 8, column 44]
+----
+
+Java stack trace (for programmers):
+----
+freemarker.core.InvalidReferenceException: [... Exception message was already printed; see it above ...]
+	at freemarker.core.InvalidReferenceException.getInstance(InvalidReferenceException.java:116)
+	at freemarker.core.EvalUtil.coerceModelToString(EvalUtil.java:346)
+	at freemarker.core.Expression.evalAndCoerceToString(Expression.java:82)
+	at freemarker.core.DollarVariable.accept(DollarVariable.java:40)
+	at freemarker.core.Environment.visit(Environment.java:312)
+	at freemarker.core.MixedContent.accept(MixedContent.java:62)
+	at freemarker.core.Environment.visitByHiddingParent(Environment.java:333)
+	at freemarker.core.IteratorBlock$Context.runLoop(IteratorBlock.java:159)
+	at freemarker.core.Environment.visitIteratorBlock(Environment.java:559)
+	at freemarker.core.IteratorBlock.accept(IteratorBlock.java:67)
+	at freemarker.core.Environment.visit(Environment.java:312)
+	at freemarker.core.MixedContent.accept(MixedContent.java:62)
+	at freemarker.core.Environment.visit(Environment.java:312)
+	at freemarker.core.Environment.process(Environment.java:290)
+	at freemarker.template.Template.process(Template.java:312)
+	at com.lyt.webtemp.util.FreeMarkerUtil.printTemp(FreeMarkerUtil.java:47)
+	at com.lyt.webtemp.main.TempMain.makeTemp(TempMain.java:79)
+	at com.lyt.webtemp.main.TempMain.getAllTableMetaData(TempMain.java:55)
+	at com.lyt.webtemp.main.TempMain.main(TempMain.java:37)
+16:49:15,678 ERROR runtime:60 - Error executing FreeMarker template
+FreeMarker template error:
+The following has evaluated to null or missing:
+==> listInfo.character_maximum_length  [in template "model.ftl" at line 8, column 46]
+
+----
+Tip: It's the step after the last dot that caused this error, not those before it.
+----
+Tip: If the failing expression is known to be legally refer to something that's null or missing, either specify a default value like myOptionalVar!myDefault, or use <#if myOptionalVar??>when-present<#else>when-missing</#if>. (These only cover the last step of the expression; to cover the whole expression, use parenthesis: (myOptionalVar.foo)!myDefault, (myOptionalVar.foo)??
+----
+
+----
+FTL stack trace ("~" means nesting-related):
+	- Failed at: ${listInfo.character_maximum_length}  [in template "model.ftl" at line 8, column 44]
+----
+
+Java stack trace (for programmers):
+----
+freemarker.core.InvalidReferenceException: [... Exception message was already printed; see it above ...]
+	at freemarker.core.InvalidReferenceException.getInstance(InvalidReferenceException.java:116)
+	at freemarker.core.EvalUtil.coerceModelToString(EvalUtil.java:346)
+	at freemarker.core.Expression.evalAndCoerceToString(Expression.java:82)
+	at freemarker.core.DollarVariable.accept(DollarVariable.java:40)
+	at freemarker.core.Environment.visit(Environment.java:312)
+	at freemarker.core.MixedContent.accept(MixedContent.java:62)
+	at freemarker.core.Environment.visitByHiddingParent(Environment.java:333)
+	at freemarker.core.IteratorBlock$Context.runLoop(IteratorBlock.java:159)
+	at freemarker.core.Environment.visitIteratorBlock(Environment.java:559)
+	at freemarker.core.IteratorBlock.accept(IteratorBlock.java:67)
+	at freemarker.core.Environment.visit(Environment.java:312)
+	at freemarker.core.MixedContent.accept(MixedContent.java:62)
+	at freemarker.core.Environment.visit(Environment.java:312)
+	at freemarker.core.Environment.process(Environment.java:290)
+	at freemarker.template.Template.process(Template.java:312)
+	at com.lyt.webtemp.util.FreeMarkerUtil.write2File(FreeMarkerUtil.java:82)
+	at com.lyt.webtemp.main.TempMain.makeTemp(TempMain.java:81)
+	at com.lyt.webtemp.main.TempMain.getAllTableMetaData(TempMain.java:55)
+	at com.lyt.webtemp.main.TempMain.main(TempMain.java:37)
+16:49:15,849 ERROR runtime:60 - Error executing FreeMarker template
+FreeMarker template error:
+The following has evaluated to null or missing:
+==> listInfo.character_maximum_length  [in template "model.ftl" at line 8, column 46]
+
+----
+Tip: It's the step after the last dot that caused this error, not those before it.
+----
+Tip: If the failing expression is known to be legally refer to something that's null or missing, either specify a default value like myOptionalVar!myDefault, or use <#if myOptionalVar??>when-present<#else>when-missing</#if>. (These only cover the last step of the expression; to cover the whole expression, use parenthesis: (myOptionalVar.foo)!myDefault, (myOptionalVar.foo)??
+----
+
+----
+FTL stack trace ("~" means nesting-related):
+	- Failed at: ${listInfo.character_maximum_length}  [in template "model.ftl" at line 8, column 44]
+----
+
+Java stack trace (for programmers):
+----
+freemarker.core.InvalidReferenceException: [... Exception message was already printed; see it above ...]
+	at freemarker.core.InvalidReferenceException.getInstance(InvalidReferenceException.java:116)
+	at freemarker.core.EvalUtil.coerceModelToString(EvalUtil.java:346)
+	at freemarker.core.Expression.evalAndCoerceToString(Expression.java:82)
+	at freemarker.core.DollarVariable.accept(DollarVariable.java:40)
+	at freemarker.core.Environment.visit(Environment.java:312)
+	at freemarker.core.MixedContent.accept(MixedContent.java:62)
+	at freemarker.core.Environment.visitByHiddingParent(Environment.java:333)
+	at freemarker.core.IteratorBlock$Context.runLoop(IteratorBlock.java:159)
+	at freemarker.core.Environment.visitIteratorBlock(Environment.java:559)
+	at freemarker.core.IteratorBlock.accept(IteratorBlock.java:67)
+	at freemarker.core.Environment.visit(Environment.java:312)
+	at freemarker.core.MixedContent.accept(MixedContent.java:62)
+	at freemarker.core.Environment.visit(Environment.java:312)
+	at freemarker.core.Environment.process(Environment.java:290)
+	at freemarker.template.Template.process(Template.java:312)
+	at com.lyt.webtemp.util.FreeMarkerUtil.printTemp(FreeMarkerUtil.java:47)
+	at com.lyt.webtemp.main.TempMain.makeTemp(TempMain.java:79)
+	at com.lyt.webtemp.main.TempMain.getAllTableMetaData(TempMain.java:55)
+	at com.lyt.webtemp.main.TempMain.main(TempMain.java:37)
+16:49:15,858 ERROR runtime:60 - Error executing FreeMarker template
+FreeMarker template error:
+The following has evaluated to null or missing:
+==> listInfo.character_maximum_length  [in template "model.ftl" at line 8, column 46]
+
+----
+Tip: It's the step after the last dot that caused this error, not those before it.
+----
+Tip: If the failing expression is known to be legally refer to something that's null or missing, either specify a default value like myOptionalVar!myDefault, or use <#if myOptionalVar??>when-present<#else>when-missing</#if>. (These only cover the last step of the expression; to cover the whole expression, use parenthesis: (myOptionalVar.foo)!myDefault, (myOptionalVar.foo)??
+----
+
+----
+FTL stack trace ("~" means nesting-related):
+	- Failed at: ${listInfo.character_maximum_length}  [in template "model.ftl" at line 8, column 44]
+----
+
+Java stack trace (for programmers):
+----
+freemarker.core.InvalidReferenceException: [... Exception message was already printed; see it above ...]
+	at freemarker.core.InvalidReferenceException.getInstance(InvalidReferenceException.java:116)
+	at freemarker.core.EvalUtil.coerceModelToString(EvalUtil.java:346)
+	at freemarker.core.Expression.evalAndCoerceToString(Expression.java:82)
+	at freemarker.core.DollarVariable.accept(DollarVariable.java:40)
+	at freemarker.core.Environment.visit(Environment.java:312)
+	at freemarker.core.MixedContent.accept(MixedContent.java:62)
+	at freemarker.core.Environment.visitByHiddingParent(Environment.java:333)
+	at freemarker.core.IteratorBlock$Context.runLoop(IteratorBlock.java:159)
+	at freemarker.core.Environment.visitIteratorBlock(Environment.java:559)
+	at freemarker.core.IteratorBlock.accept(IteratorBlock.java:67)
+	at freemarker.core.Environment.visit(Environment.java:312)
+	at freemarker.core.MixedContent.accept(MixedContent.java:62)
+	at freemarker.core.Environment.visit(Environment.java:312)
+	at freemarker.core.Environment.process(Environment.java:290)
+	at freemarker.template.Template.process(Template.java:312)
+	at com.lyt.webtemp.util.FreeMarkerUtil.write2File(FreeMarkerUtil.java:82)
+	at com.lyt.webtemp.main.TempMain.makeTemp(TempMain.java:81)
+	at com.lyt.webtemp.main.TempMain.getAllTableMetaData(TempMain.java:55)
+	at com.lyt.webtemp.main.TempMain.main(TempMain.java:37)
+16:49:16,002 ERROR runtime:60 - Error executing FreeMarker template
+FreeMarker template error:
+The following has evaluated to null or missing:
+==> listInfo.character_maximum_length  [in template "model.ftl" at line 8, column 46]
+
+----
+Tip: It's the step after the last dot that caused this error, not those before it.
+----
+Tip: If the failing expression is known to be legally refer to something that's null or missing, either specify a default value like myOptionalVar!myDefault, or use <#if myOptionalVar??>when-present<#else>when-missing</#if>. (These only cover the last step of the expression; to cover the whole expression, use parenthesis: (myOptionalVar.foo)!myDefault, (myOptionalVar.foo)??
+----
+
+----
+FTL stack trace ("~" means nesting-related):
+	- Failed at: ${listInfo.character_maximum_length}  [in template "model.ftl" at line 8, column 44]
+----
+
+Java stack trace (for programmers):
+----
+freemarker.core.InvalidReferenceException: [... Exception message was already printed; see it above ...]
+	at freemarker.core.InvalidReferenceException.getInstance(InvalidReferenceException.java:116)
+	at freemarker.core.EvalUtil.coerceModelToString(EvalUtil.java:346)
+	at freemarker.core.Expression.evalAndCoerceToString(Expression.java:82)
+	at freemarker.core.DollarVariable.accept(DollarVariable.java:40)
+	at freemarker.core.Environment.visit(Environment.java:312)
+	at freemarker.core.MixedContent.accept(MixedContent.java:62)
+	at freemarker.core.Environment.visitByHiddingParent(Environment.java:333)
+	at freemarker.core.IteratorBlock$Context.runLoop(IteratorBlock.java:159)
+	at freemarker.core.Environment.visitIteratorBlock(Environment.java:559)
+	at freemarker.core.IteratorBlock.accept(IteratorBlock.java:67)
+	at freemarker.core.Environment.visit(Environment.java:312)
+	at freemarker.core.MixedContent.accept(MixedContent.java:62)
+	at freemarker.core.Environment.visit(Environment.java:312)
+	at freemarker.core.Environment.process(Environment.java:290)
+	at freemarker.template.Template.process(Template.java:312)
+	at com.lyt.webtemp.util.FreeMarkerUtil.printTemp(FreeMarkerUtil.java:47)
+	at com.lyt.webtemp.main.TempMain.makeTemp(TempMain.java:79)
+	at com.lyt.webtemp.main.TempMain.getAllTableMetaData(TempMain.java:55)
+	at com.lyt.webtemp.main.TempMain.main(TempMain.java:37)
+16:49:16,009 ERROR runtime:60 - Error executing FreeMarker template
+FreeMarker template error:
+The following has evaluated to null or missing:
+==> listInfo.character_maximum_length  [in template "model.ftl" at line 8, column 46]
+
+----
+Tip: It's the step after the last dot that caused this error, not those before it.
+----
+Tip: If the failing expression is known to be legally refer to something that's null or missing, either specify a default value like myOptionalVar!myDefault, or use <#if myOptionalVar??>when-present<#else>when-missing</#if>. (These only cover the last step of the expression; to cover the whole expression, use parenthesis: (myOptionalVar.foo)!myDefault, (myOptionalVar.foo)??
+----
+
+----
+FTL stack trace ("~" means nesting-related):
+	- Failed at: ${listInfo.character_maximum_length}  [in template "model.ftl" at line 8, column 44]
+----
+
+Java stack trace (for programmers):
+----
+freemarker.core.InvalidReferenceException: [... Exception message was already printed; see it above ...]
+	at freemarker.core.InvalidReferenceException.getInstance(InvalidReferenceException.java:116)
+	at freemarker.core.EvalUtil.coerceModelToString(EvalUtil.java:346)
+	at freemarker.core.Expression.evalAndCoerceToString(Expression.java:82)
+	at freemarker.core.DollarVariable.accept(DollarVariable.java:40)
+	at freemarker.core.Environment.visit(Environment.java:312)
+	at freemarker.core.MixedContent.accept(MixedContent.java:62)
+	at freemarker.core.Environment.visitByHiddingParent(Environment.java:333)
+	at freemarker.core.IteratorBlock$Context.runLoop(IteratorBlock.java:159)
+	at freemarker.core.Environment.visitIteratorBlock(Environment.java:559)
+	at freemarker.core.IteratorBlock.accept(IteratorBlock.java:67)
+	at freemarker.core.Environment.visit(Environment.java:312)
+	at freemarker.core.MixedContent.accept(MixedContent.java:62)
+	at freemarker.core.Environment.visit(Environment.java:312)
+	at freemarker.core.Environment.process(Environment.java:290)
+	at freemarker.template.Template.process(Template.java:312)
+	at com.lyt.webtemp.util.FreeMarkerUtil.write2File(FreeMarkerUtil.java:82)
+	at com.lyt.webtemp.main.TempMain.makeTemp(TempMain.java:81)
+	at com.lyt.webtemp.main.TempMain.getAllTableMetaData(TempMain.java:55)
+	at com.lyt.webtemp.main.TempMain.main(TempMain.java:37)
+16:49:16,131 ERROR runtime:60 - Error executing FreeMarker template
+FreeMarker template error:
+The following has evaluated to null or missing:
+==> listInfo.character_maximum_length  [in template "model.ftl" at line 8, column 46]
+
+----
+Tip: It's the step after the last dot that caused this error, not those before it.
+----
+Tip: If the failing expression is known to be legally refer to something that's null or missing, either specify a default value like myOptionalVar!myDefault, or use <#if myOptionalVar??>when-present<#else>when-missing</#if>. (These only cover the last step of the expression; to cover the whole expression, use parenthesis: (myOptionalVar.foo)!myDefault, (myOptionalVar.foo)??
+----
+
+----
+FTL stack trace ("~" means nesting-related):
+	- Failed at: ${listInfo.character_maximum_length}  [in template "model.ftl" at line 8, column 44]
+----
+
+Java stack trace (for programmers):
+----
+freemarker.core.InvalidReferenceException: [... Exception message was already printed; see it above ...]
+	at freemarker.core.InvalidReferenceException.getInstance(InvalidReferenceException.java:116)
+	at freemarker.core.EvalUtil.coerceModelToString(EvalUtil.java:346)
+	at freemarker.core.Expression.evalAndCoerceToString(Expression.java:82)
+	at freemarker.core.DollarVariable.accept(DollarVariable.java:40)
+	at freemarker.core.Environment.visit(Environment.java:312)
+	at freemarker.core.MixedContent.accept(MixedContent.java:62)
+	at freemarker.core.Environment.visitByHiddingParent(Environment.java:333)
+	at freemarker.core.IteratorBlock$Context.runLoop(IteratorBlock.java:159)
+	at freemarker.core.Environment.visitIteratorBlock(Environment.java:559)
+	at freemarker.core.IteratorBlock.accept(IteratorBlock.java:67)
+	at freemarker.core.Environment.visit(Environment.java:312)
+	at freemarker.core.MixedContent.accept(MixedContent.java:62)
+	at freemarker.core.Environment.visit(Environment.java:312)
+	at freemarker.core.Environment.process(Environment.java:290)
+	at freemarker.template.Template.process(Template.java:312)
+	at com.lyt.webtemp.util.FreeMarkerUtil.printTemp(FreeMarkerUtil.java:47)
+	at com.lyt.webtemp.main.TempMain.makeTemp(TempMain.java:79)
+	at com.lyt.webtemp.main.TempMain.getAllTableMetaData(TempMain.java:55)
+	at com.lyt.webtemp.main.TempMain.main(TempMain.java:37)
+16:49:16,138 ERROR runtime:60 - Error executing FreeMarker template
+FreeMarker template error:
+The following has evaluated to null or missing:
+==> listInfo.character_maximum_length  [in template "model.ftl" at line 8, column 46]
+
+----
+Tip: It's the step after the last dot that caused this error, not those before it.
+----
+Tip: If the failing expression is known to be legally refer to something that's null or missing, either specify a default value like myOptionalVar!myDefault, or use <#if myOptionalVar??>when-present<#else>when-missing</#if>. (These only cover the last step of the expression; to cover the whole expression, use parenthesis: (myOptionalVar.foo)!myDefault, (myOptionalVar.foo)??
+----
+
+----
+FTL stack trace ("~" means nesting-related):
+	- Failed at: ${listInfo.character_maximum_length}  [in template "model.ftl" at line 8, column 44]
+----
+
+Java stack trace (for programmers):
+----
+freemarker.core.InvalidReferenceException: [... Exception message was already printed; see it above ...]
+	at freemarker.core.InvalidReferenceException.getInstance(InvalidReferenceException.java:116)
+	at freemarker.core.EvalUtil.coerceModelToString(EvalUtil.java:346)
+	at freemarker.core.Expression.evalAndCoerceToString(Expression.java:82)
+	at freemarker.core.DollarVariable.accept(DollarVariable.java:40)
+	at freemarker.core.Environment.visit(Environment.java:312)
+	at freemarker.core.MixedContent.accept(MixedContent.java:62)
+	at freemarker.core.Environment.visitByHiddingParent(Environment.java:333)
+	at freemarker.core.IteratorBlock$Context.runLoop(IteratorBlock.java:159)
+	at freemarker.core.Environment.visitIteratorBlock(Environment.java:559)
+	at freemarker.core.IteratorBlock.accept(IteratorBlock.java:67)
+	at freemarker.core.Environment.visit(Environment.java:312)
+	at freemarker.core.MixedContent.accept(MixedContent.java:62)
+	at freemarker.core.Environment.visit(Environment.java:312)
+	at freemarker.core.Environment.process(Environment.java:290)
+	at freemarker.template.Template.process(Template.java:312)
+	at com.lyt.webtemp.util.FreeMarkerUtil.write2File(FreeMarkerUtil.java:82)
+	at com.lyt.webtemp.main.TempMain.makeTemp(TempMain.java:81)
+	at com.lyt.webtemp.main.TempMain.getAllTableMetaData(TempMain.java:55)
+	at com.lyt.webtemp.main.TempMain.main(TempMain.java:37)
+16:49:16,204 ERROR runtime:60 - Error executing FreeMarker template
+FreeMarker template error:
+The following has evaluated to null or missing:
+==> listInfo.character_maximum_length  [in template "model.ftl" at line 8, column 46]
+
+----
+Tip: It's the step after the last dot that caused this error, not those before it.
+----
+Tip: If the failing expression is known to be legally refer to something that's null or missing, either specify a default value like myOptionalVar!myDefault, or use <#if myOptionalVar??>when-present<#else>when-missing</#if>. (These only cover the last step of the expression; to cover the whole expression, use parenthesis: (myOptionalVar.foo)!myDefault, (myOptionalVar.foo)??
+----
+
+----
+FTL stack trace ("~" means nesting-related):
+	- Failed at: ${listInfo.character_maximum_length}  [in template "model.ftl" at line 8, column 44]
+----
+
+Java stack trace (for programmers):
+----
+freemarker.core.InvalidReferenceException: [... Exception message was already printed; see it above ...]
+	at freemarker.core.InvalidReferenceException.getInstance(InvalidReferenceException.java:116)
+	at freemarker.core.EvalUtil.coerceModelToString(EvalUtil.java:346)
+	at freemarker.core.Expression.evalAndCoerceToString(Expression.java:82)
+	at freemarker.core.DollarVariable.accept(DollarVariable.java:40)
+	at freemarker.core.Environment.visit(Environment.java:312)
+	at freemarker.core.MixedContent.accept(MixedContent.java:62)
+	at freemarker.core.Environment.visitByHiddingParent(Environment.java:333)
+	at freemarker.core.IteratorBlock$Context.runLoop(IteratorBlock.java:159)
+	at freemarker.core.Environment.visitIteratorBlock(Environment.java:559)
+	at freemarker.core.IteratorBlock.accept(IteratorBlock.java:67)
+	at freemarker.core.Environment.visit(Environment.java:312)
+	at freemarker.core.MixedContent.accept(MixedContent.java:62)
+	at freemarker.core.Environment.visit(Environment.java:312)
+	at freemarker.core.Environment.process(Environment.java:290)
+	at freemarker.template.Template.process(Template.java:312)
+	at com.lyt.webtemp.util.FreeMarkerUtil.printTemp(FreeMarkerUtil.java:47)
+	at com.lyt.webtemp.main.TempMain.makeTemp(TempMain.java:79)
+	at com.lyt.webtemp.main.TempMain.getAllTableMetaData(TempMain.java:55)
+	at com.lyt.webtemp.main.TempMain.main(TempMain.java:37)
+16:49:16,214 ERROR runtime:60 - Error executing FreeMarker template
+FreeMarker template error:
+The following has evaluated to null or missing:
+==> listInfo.character_maximum_length  [in template "model.ftl" at line 8, column 46]
+
+----
+Tip: It's the step after the last dot that caused this error, not those before it.
+----
+Tip: If the failing expression is known to be legally refer to something that's null or missing, either specify a default value like myOptionalVar!myDefault, or use <#if myOptionalVar??>when-present<#else>when-missing</#if>. (These only cover the last step of the expression; to cover the whole expression, use parenthesis: (myOptionalVar.foo)!myDefault, (myOptionalVar.foo)??
+----
+
+----
+FTL stack trace ("~" means nesting-related):
+	- Failed at: ${listInfo.character_maximum_length}  [in template "model.ftl" at line 8, column 44]
+----
+
+Java stack trace (for programmers):
+----
+freemarker.core.InvalidReferenceException: [... Exception message was already printed; see it above ...]
+	at freemarker.core.InvalidReferenceException.getInstance(InvalidReferenceException.java:116)
+	at freemarker.core.EvalUtil.coerceModelToString(EvalUtil.java:346)
+	at freemarker.core.Expression.evalAndCoerceToString(Expression.java:82)
+	at freemarker.core.DollarVariable.accept(DollarVariable.java:40)
+	at freemarker.core.Environment.visit(Environment.java:312)
+	at freemarker.core.MixedContent.accept(MixedContent.java:62)
+	at freemarker.core.Environment.visitByHiddingParent(Environment.java:333)
+	at freemarker.core.IteratorBlock$Context.runLoop(IteratorBlock.java:159)
+	at freemarker.core.Environment.visitIteratorBlock(Environment.java:559)
+	at freemarker.core.IteratorBlock.accept(IteratorBlock.java:67)
+	at freemarker.core.Environment.visit(Environment.java:312)
+	at freemarker.core.MixedContent.accept(MixedContent.java:62)
+	at freemarker.core.Environment.visit(Environment.java:312)
+	at freemarker.core.Environment.process(Environment.java:290)
+	at freemarker.template.Template.process(Template.java:312)
+	at com.lyt.webtemp.util.FreeMarkerUtil.write2File(FreeMarkerUtil.java:82)
+	at com.lyt.webtemp.main.TempMain.makeTemp(TempMain.java:81)
+	at com.lyt.webtemp.main.TempMain.getAllTableMetaData(TempMain.java:55)
+	at com.lyt.webtemp.main.TempMain.main(TempMain.java:37)
+16:49:16,422 ERROR runtime:60 - Error executing FreeMarker template
+FreeMarker template error:
+The following has evaluated to null or missing:
+==> listInfo.character_maximum_length  [in template "model.ftl" at line 8, column 46]
+
+----
+Tip: It's the step after the last dot that caused this error, not those before it.
+----
+Tip: If the failing expression is known to be legally refer to something that's null or missing, either specify a default value like myOptionalVar!myDefault, or use <#if myOptionalVar??>when-present<#else>when-missing</#if>. (These only cover the last step of the expression; to cover the whole expression, use parenthesis: (myOptionalVar.foo)!myDefault, (myOptionalVar.foo)??
+----
+
+----
+FTL stack trace ("~" means nesting-related):
+	- Failed at: ${listInfo.character_maximum_length}  [in template "model.ftl" at line 8, column 44]
+----
+
+Java stack trace (for programmers):
+----
+freemarker.core.InvalidReferenceException: [... Exception message was already printed; see it above ...]
+	at freemarker.core.InvalidReferenceException.getInstance(InvalidReferenceException.java:116)
+	at freemarker.core.EvalUtil.coerceModelToString(EvalUtil.java:346)
+	at freemarker.core.Expression.evalAndCoerceToString(Expression.java:82)
+	at freemarker.core.DollarVariable.accept(DollarVariable.java:40)
+	at freemarker.core.Environment.visit(Environment.java:312)
+	at freemarker.core.MixedContent.accept(MixedContent.java:62)
+	at freemarker.core.Environment.visitByHiddingParent(Environment.java:333)
+	at freemarker.core.IteratorBlock$Context.runLoop(IteratorBlock.java:159)
+	at freemarker.core.Environment.visitIteratorBlock(Environment.java:559)
+	at freemarker.core.IteratorBlock.accept(IteratorBlock.java:67)
+	at freemarker.core.Environment.visit(Environment.java:312)
+	at freemarker.core.MixedContent.accept(MixedContent.java:62)
+	at freemarker.core.Environment.visit(Environment.java:312)
+	at freemarker.core.Environment.process(Environment.java:290)
+	at freemarker.template.Template.process(Template.java:312)
+	at com.lyt.webtemp.util.FreeMarkerUtil.printTemp(FreeMarkerUtil.java:47)
+	at com.lyt.webtemp.main.TempMain.makeTemp(TempMain.java:79)
+	at com.lyt.webtemp.main.TempMain.getAllTableMetaData(TempMain.java:55)
+	at com.lyt.webtemp.main.TempMain.main(TempMain.java:37)
+16:49:16,464 ERROR runtime:60 - Error executing FreeMarker template
+FreeMarker template error:
+The following has evaluated to null or missing:
+==> listInfo.character_maximum_length  [in template "model.ftl" at line 8, column 46]
+
+----
+Tip: It's the step after the last dot that caused this error, not those before it.
+----
+Tip: If the failing expression is known to be legally refer to something that's null or missing, either specify a default value like myOptionalVar!myDefault, or use <#if myOptionalVar??>when-present<#else>when-missing</#if>. (These only cover the last step of the expression; to cover the whole expression, use parenthesis: (myOptionalVar.foo)!myDefault, (myOptionalVar.foo)??
+----
+
+----
+FTL stack trace ("~" means nesting-related):
+	- Failed at: ${listInfo.character_maximum_length}  [in template "model.ftl" at line 8, column 44]
+----
+
+Java stack trace (for programmers):
+----
+freemarker.core.InvalidReferenceException: [... Exception message was already printed; see it above ...]
+	at freemarker.core.InvalidReferenceException.getInstance(InvalidReferenceException.java:116)
+	at freemarker.core.EvalUtil.coerceModelToString(EvalUtil.java:346)
+	at freemarker.core.Expression.evalAndCoerceToString(Expression.java:82)
+	at freemarker.core.DollarVariable.accept(DollarVariable.java:40)
+	at freemarker.core.Environment.visit(Environment.java:312)
+	at freemarker.core.MixedContent.accept(MixedContent.java:62)
+	at freemarker.core.Environment.visitByHiddingParent(Environment.java:333)
+	at freemarker.core.IteratorBlock$Context.runLoop(IteratorBlock.java:159)
+	at freemarker.core.Environment.visitIteratorBlock(Environment.java:559)
+	at freemarker.core.IteratorBlock.accept(IteratorBlock.java:67)
+	at freemarker.core.Environment.visit(Environment.java:312)
+	at freemarker.core.MixedContent.accept(MixedContent.java:62)
+	at freemarker.core.Environment.visit(Environment.java:312)
+	at freemarker.core.Environment.process(Environment.java:290)
+	at freemarker.template.Template.process(Template.java:312)
+	at com.lyt.webtemp.util.FreeMarkerUtil.write2File(FreeMarkerUtil.java:82)
+	at com.lyt.webtemp.main.TempMain.makeTemp(TempMain.java:81)
+	at com.lyt.webtemp.main.TempMain.getAllTableMetaData(TempMain.java:55)
+	at com.lyt.webtemp.main.TempMain.main(TempMain.java:37)
+16:49:16,596 ERROR runtime:60 - Error executing FreeMarker template
+FreeMarker template error:
+The following has evaluated to null or missing:
+==> listInfo.character_maximum_length  [in template "model.ftl" at line 8, column 46]
+
+----
+Tip: It's the step after the last dot that caused this error, not those before it.
+----
+Tip: If the failing expression is known to be legally refer to something that's null or missing, either specify a default value like myOptionalVar!myDefault, or use <#if myOptionalVar??>when-present<#else>when-missing</#if>. (These only cover the last step of the expression; to cover the whole expression, use parenthesis: (myOptionalVar.foo)!myDefault, (myOptionalVar.foo)??
+----
+
+----
+FTL stack trace ("~" means nesting-related):
+	- Failed at: ${listInfo.character_maximum_length}  [in template "model.ftl" at line 8, column 44]
+----
+
+Java stack trace (for programmers):
+----
+freemarker.core.InvalidReferenceException: [... Exception message was already printed; see it above ...]
+	at freemarker.core.InvalidReferenceException.getInstance(InvalidReferenceException.java:116)
+	at freemarker.core.EvalUtil.coerceModelToString(EvalUtil.java:346)
+	at freemarker.core.Expression.evalAndCoerceToString(Expression.java:82)
+	at freemarker.core.DollarVariable.accept(DollarVariable.java:40)
+	at freemarker.core.Environment.visit(Environment.java:312)
+	at freemarker.core.MixedContent.accept(MixedContent.java:62)
+	at freemarker.core.Environment.visitByHiddingParent(Environment.java:333)
+	at freemarker.core.IteratorBlock$Context.runLoop(IteratorBlock.java:159)
+	at freemarker.core.Environment.visitIteratorBlock(Environment.java:559)
+	at freemarker.core.IteratorBlock.accept(IteratorBlock.java:67)
+	at freemarker.core.Environment.visit(Environment.java:312)
+	at freemarker.core.MixedContent.accept(MixedContent.java:62)
+	at freemarker.core.Environment.visit(Environment.java:312)
+	at freemarker.core.Environment.process(Environment.java:290)
+	at freemarker.template.Template.process(Template.java:312)
+	at com.lyt.webtemp.util.FreeMarkerUtil.printTemp(FreeMarkerUtil.java:47)
+	at com.lyt.webtemp.main.TempMain.makeTemp(TempMain.java:79)
+	at com.lyt.webtemp.main.TempMain.getAllTableMetaData(TempMain.java:55)
+	at com.lyt.webtemp.main.TempMain.main(TempMain.java:37)
+16:49:16,612 ERROR runtime:60 - Error executing FreeMarker template
+FreeMarker template error:
+The following has evaluated to null or missing:
+==> listInfo.character_maximum_length  [in template "model.ftl" at line 8, column 46]
+
+----
+Tip: It's the step after the last dot that caused this error, not those before it.
+----
+Tip: If the failing expression is known to be legally refer to something that's null or missing, either specify a default value like myOptionalVar!myDefault, or use <#if myOptionalVar??>when-present<#else>when-missing</#if>. (These only cover the last step of the expression; to cover the whole expression, use parenthesis: (myOptionalVar.foo)!myDefault, (myOptionalVar.foo)??
+----
+
+----
+FTL stack trace ("~" means nesting-related):
+	- Failed at: ${listInfo.character_maximum_length}  [in template "model.ftl" at line 8, column 44]
+----
+
+Java stack trace (for programmers):
+----
+freemarker.core.InvalidReferenceException: [... Exception message was already printed; see it above ...]
+	at freemarker.core.InvalidReferenceException.getInstance(InvalidReferenceException.java:116)
+	at freemarker.core.EvalUtil.coerceModelToString(EvalUtil.java:346)
+	at freemarker.core.Expression.evalAndCoerceToString(Expression.java:82)
+	at freemarker.core.DollarVariable.accept(DollarVariable.java:40)
+	at freemarker.core.Environment.visit(Environment.java:312)
+	at freemarker.core.MixedContent.accept(MixedContent.java:62)
+	at freemarker.core.Environment.visitByHiddingParent(Environment.java:333)
+	at freemarker.core.IteratorBlock$Context.runLoop(IteratorBlock.java:159)
+	at freemarker.core.Environment.visitIteratorBlock(Environment.java:559)
+	at freemarker.core.IteratorBlock.accept(IteratorBlock.java:67)
+	at freemarker.core.Environment.visit(Environment.java:312)
+	at freemarker.core.MixedContent.accept(MixedContent.java:62)
+	at freemarker.core.Environment.visit(Environment.java:312)
+	at freemarker.core.Environment.process(Environment.java:290)
+	at freemarker.template.Template.process(Template.java:312)
+	at com.lyt.webtemp.util.FreeMarkerUtil.write2File(FreeMarkerUtil.java:82)
+	at com.lyt.webtemp.main.TempMain.makeTemp(TempMain.java:81)
+	at com.lyt.webtemp.main.TempMain.getAllTableMetaData(TempMain.java:55)
+	at com.lyt.webtemp.main.TempMain.main(TempMain.java:37)
