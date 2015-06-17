@@ -36,6 +36,7 @@ public class TempMain {
 
 		// 1.读取数据库的全部表。
 		List<String> tableNames = DBDaoUtils.getTableName();
+		
 		// 3.获得所有表的元数据,并且制作模板
 		TempUtil.getAllTableMetaData(tableNames, DBNAME, PACKAGE_NAME,
 				DIR_NAME, TEMP_LOCATION, FOLDER_NAME, FILE_SUFFIX_NAME,
