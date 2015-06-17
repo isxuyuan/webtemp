@@ -64,9 +64,9 @@ public class FreeMarkerUtil {
 		try {
 			//通过一个文件输出流，就可以写到相应的文件中
 			
-			File foder = new File(resultPath+"\\"+type[k]);
+			File foder = new File(resultPath+"/"+type[k]);
 
-			File file = new File(foder+"\\"+(outFile.replaceFirst(outFile.substring(0, 1), outFile.substring(0, 1).toUpperCase())+type2[k]).trim()+".java");
+			File file = new File(foder+"/"+(outFile.replaceFirst(outFile.substring(0, 1), outFile.substring(0, 1).toUpperCase())+type2[k]).trim()+".java");
 			
 			if (foder.exists()==false) {
 				foder.mkdirs();

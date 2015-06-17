@@ -18,12 +18,14 @@ public class TempMain {
 			"service.impl", "dao", "dao.impl" };
 	// 生后的文件夹结构名称
 	private static final String[] FOLDER_NAME = { "model", "action", "service",
-			"service\\impl", "dao", "dao\\impl" };
+			"service/impl", "dao", "dao/impl" };
 	// 生成java文件后后缀
 	private static final String[] FILE_SUFFIX_NAME = { "", "Action", "Service",
 			"ServiceImpl", "Dao", "DaoImpl" };
 	// 生成代码输出的位置
-	private static final String RESULT_PATH = "F:\\web";
+	//private static final String RESULT_PATH = "F:\\web";
+	// 生成代码输出的位置(mac)
+	private static final String RESULT_PATH = "/Users/lyt/Desktop/webtemp/";
 	// 模板位置，相对路径
 	private static final String TEMP_LOCATION = "/ftl/SSH";
 

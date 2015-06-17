@@ -53,15 +53,22 @@ public class TempUtil {
 			String[] FILE_SUFFIX_NAME, String RESULT_PATH) {
 
 		List<TableInfo> tableInfo_new = TempUtil.typeChange(tableInfoList);
+		
+		TableInfo tableInfoObj = null;
+		for (int i = 0; i < tableInfo_new.size(); i++) {
+			
+			tableInfoObj = tableInfo_new.get(i);
+		}
 
 		Map<String, Object> rootMap = new HashMap<String, Object>();
+		
 
 		// 1.准备数据
 		rootMap.put("className", tableNames.get(flag));
 		rootMap.put("packageName", PACKAGE_NAME);
 		rootMap.put("listInfo", tableInfo_new);
 		// 获得一个对象
-		rootMap.put("tableInfo", tableInfo_new.get(flag));
+		rootMap.put("tableInfo", tableInfoObj);
 
 		System.out.println(rootMap);
 
