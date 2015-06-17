@@ -23,7 +23,7 @@ public class TempMain {
 	private static final String[] FILE_SUFFIX_NAME = { "", "Action", "Service",
 			"ServiceImpl", "Dao", "DaoImpl" };
 	// 生成代码输出的位置
-	//private static final String RESULT_PATH = "F:\\web";
+	//private static final String RESULT_PATH = "F:/web";
 	// 生成代码输出的位置(mac)
 	private static final String RESULT_PATH = "/Users/lyt/Desktop/webtemp/";
 	// 模板位置，相对路径

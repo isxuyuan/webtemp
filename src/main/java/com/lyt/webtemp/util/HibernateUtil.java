@@ -12,6 +12,7 @@ import org.hibernate.cfg.Configuration;
 /**
  * 
  * 使用hibernate连接数据库
+ * 暂时没用
  * @author lyt
  *
  */
