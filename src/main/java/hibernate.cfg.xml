@@ -7,11 +7,30 @@
 	<session-factory>
 		<!-- 连接数据库 JDBC 四个基本连接参数 -->
 		<!-- mysql数据库  mac不识别localhost-->
-		<property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+	<!-- 	<property name="connection.driver_class">com.mysql.jdbc.Driver</property>
 		<property name="connection.url">jdbc:mysql://127.0.0.1:3306/julyedu</property>
 		<property name="connection.username">root</property>
 		<property name="connection.password">123456</property>
 		<property name="dialect">org.hibernate.dialect.MySQLDialect</property>
+		 -->
+		 
+		 
+		 <property name="hibernate.connection.driver_class">com.ibm.db2.jcc.DB2Driver</property>
+	<!--测试库1 -->
+	 	<property name="hibernate.connection.url">jdbc:db2://192.168.40.10:50001/mxcs</property>
+			<!--测试库
+	 	<property name="hibernate.connection.url">jdbc:db2://119.40.50.136:50000/hnsdb</property> -->
+		
+		<!-- 正式库 -->
+		<!-- 
+		<property name="hibernate.connection.url">jdbc:db2://124.202.228.243:50000/hnsdb</property> -->
+		<property name="hibernate.connection.username">tzxdb</property>
+		<property name="hibernate.connection.password">123456</property>
+		<!-- 配置hibernate 使用 数据库方言 -->
+		
+		<!-- 方言解决 不同数据库 之间区别 -->
+		<property name="hibernate.dialect">org.hibernate.dialect.DB2Dialect</property>
+		
 		<!-- 其它属性 -->
 		<!-- 自动建表 -->
 		<property name="hibernate.hbm2ddl.auto">update</property>

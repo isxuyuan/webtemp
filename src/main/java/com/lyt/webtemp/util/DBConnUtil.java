@@ -14,14 +14,27 @@ public class DBConnUtil {
 	//mysql数据信息
 	
 	//mac 电脑127.0.0.1不能改写成localhost
-	 private static String url = "jdbc:mysql://127.0.0.1:3306/julyedu"; 
-	 private static String username = "root";
-	 private static String password = "123456";
-	 private static Connection conn = null;
+	// private static String url = "jdbc:mysql://127.0.0.1:3306/julyedu"; 
+	// private static String username = "root";
+	// private static String password = "123456";
+	// private static Connection conn = null;
+	 
+	//DB2数据信息
+		
+		//mac 电脑127.0.0.1不能改写成localhost
+		// private static String url = "jdbc:mysql://127.0.0.1:3306/julyedu"; 
+		// private static String url = "jdbc:mysql://127.0.0.1:3306/julyedu"; 
+		 private static String url = "jdbc:db2://192.168.40.10:50001/test"; 
+		 private static String username = "tzxdb";
+		 private static String password = "123456";
+		 private static Connection conn = null;
+	 
 	 //静态块加载驱动（反射）
 	 static{
 		 try {
-			Class.forName("com.mysql.jdbc.Driver");
+			//Class.forName("com.mysql.jdbc.Driver");
+			
+			 Class.forName("com.ibm.db2.jcc.DB2Driver");
 		} catch (ClassNotFoundException e) {
 			e.printStackTrace();
 		}

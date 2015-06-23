@@ -31,7 +31,7 @@
 			<artifactId>mysql-connector-java</artifactId>
 			<version>5.1.13</version>
 		</dependency>
-	<!-- 	这两个是db2连接的包，在maven库里不存在，需要自己加（暂不加）
+	<!-- 	这两个是db2连接的包，在maven库里不存在，需要自己加（暂不加）-->
 	<dependency>
 			<groupId>db2jcc</groupId>
 			<artifactId>db2jcc</artifactId>
@@ -41,7 +41,7 @@
 			<groupId>db2jcc_license_cu</groupId>
 			<artifactId>db2jcc_license_cu</artifactId>
 			<version>9.0</version>
-		</dependency> -->
+		</dependency> 
 		<dependency>
 			<groupId>org.xerial</groupId>
 			<artifactId>sqlite-jdbc</artifactId>
